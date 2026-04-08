@@ -1,20 +1,20 @@
 # ENK.810081
 # Reply: Agents for Data Quality
-**Team Members:** [Nurkhanym Ziyabek (810081)], [Emanuele Aicardi (814361)], [Kamila Dochshanova (809891)]
+**Team Members:** Nurkhanym Ziyabek (810081), Emanuele Aicardi (814361), Kamila Dochshanova (809891)
 
-## [Section 1] Introduction
+## Introduction
 This project develops a multi-agent AI system for ...
 
-## [Section 2] Methods
+## Methods
 We implemented ...
 
-## [Section 3] Experimental Design
+## Experimental Design
 * **The main purpose:** ...
 * **Baseline(s):** ...
 * **Evaluation Metrics(s):** ...
 
-## [Section 4] Results
+## Results
 * **Main finding(s):** ...
 
-## [Section 5] Conclusions
+## Conclusions
 * **Take-away:** ...
