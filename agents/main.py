@@ -185,7 +185,7 @@ placeholders = ['n/a', 'nan', '-', 'unknown', 'null', '', 'none']
 missing_mask = df.isin(placeholders) | df.isna()
 
 
-# Counting the number of "holes" vertically (in columns) and horizontally
+# Counting the number of "holes" vertically and horizontally
 null_per_column = missing_mask.sum()
 null_per_row = missing_mask.sum(axis=1)
 
