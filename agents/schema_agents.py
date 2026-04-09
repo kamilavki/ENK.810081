@@ -1,3 +1,5 @@
+# Schema validation
+
 import pandas as pd
 import re
 from typing import Dict, Any, List
@@ -166,3 +168,47 @@ def schema_validation(df: pd.DataFrame, expected_schema: Dict[str, str]) -> Dict
 
     report["schema_score"] = compute_schema_score(report, len(expected_schema))
     return report
+
+# Completeness analysis
+
+import numpy as np
+
+
+# Creating an agent and setting a rule that if a column is less than 10% full, it's considered empty 
+def completeness (df, sparse_threshold=10.0)
+    # Сounting the total number of rows and columns
+    total_rows= len(df) 
+    total_cols= len(df.columns)
+
+# Implementing a robust detection logic that identifies both standard NaN values and domain-specific placeholders ('n/a', 'unknown', '-') by creating a comprehensive boolean mask to capture all forms of incomplete data
+placeholders = ['n/a', 'nan', '-', 'unknown', 'null', '', 'none']
+missing_mask = df.isin(placeholders) | df.isna()
+
+
+# Counting the number of "holes" vertically (in columns) and horizontally
+null_per_column = missing_mask.sum()
+null_per_row = missing_mask.sum(axis=1)
+
+
+# Implementing the percentage of completeness by dividing all rows minus holes by the total number and multiplying by 100
+column_completeness = ((total_rows - null_per_column) / total_rows)*100
+
+# Сounting the area of the entire table and determine what percentage of this area is occupied by holes - quality
+total_cells = total_rows*total_cols
+total_missing = missing_mask.sum().sum()
+overall_completeness = ((total_cells- total_missing)/ total_cells)*100
+
+# Agent automatically marks "sparse columns"- those with a completeness level below the 10% threshold- identifying them as candidates for deletion or further study
+sparse_columns= column_completeness[column_completeness<sparse_threshold].index.tolist()
+
+# The agent aggregates localized results into a structured pivot table, providing a transparent view of the health of the dataset by matching column names with specific missing data values and final percentages of completeness
+completeness_report = pd.DataFrame([
+    'Column Name': df.columns,
+    'Missing Count': null_per_column.values,
+    'Completeness Rate': column_completeness.values.round(2)
+    ])
+
+print (f"Overall Dataset Completeness: [overall_completeness:.2f]")
+print (f"Sparse columns identified:[sparse_columns]")
+
+return completeness_report, overall_completeness, sparse_columns
