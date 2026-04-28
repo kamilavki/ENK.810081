@@ -1,0 +1,8 @@
+{
+  "customer_id": "int",
+  "name": "string",
+  "birth_date": "date",
+  "email": "string",
+  "salary": "float",
+  "is_active": "bool"
+}
