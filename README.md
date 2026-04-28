@@ -49,6 +49,8 @@ pip install pandas numpy matplotlib seaborn requests
 
 No GPU or special hardware is required. Tested with Python 3.14.2 on macOS. The optional LLM integration requires either [Ollama](https://ollama.com) running locally with a `llama3` model, or a `GROQ_API_KEY` environment variable set with access to `mixtral-8x7b-32768`.
 
+> ⚠️ **Important:** The real NoiPA datasets (`spesa.csv` and `attivazioniCessazioni.csv`) must be placed inside the `datasets/` folder before running the notebook. These files are already included in the GitHub repository — if you cloned the repo, no action is needed.
+
 ---
 
 ## Section 3 — Experimental Design
@@ -83,8 +85,8 @@ We ran the pipeline on four datasets to validate the system across different lev
 |---------|--------|--------------|-------------|---------|-------------|
 | Dataset 1 (synthetic, clean) | 95 | 93.33 | 95 | 100 | 95.50 |
 | Dataset 2 (synthetic, messy) | 90 | 58.33 | 95 | 100 | 84.00 |
-| Dataset 3 (real, Spesa) | 45 | 87.36 | 0 | 0 | 35.21 |
-| Dataset 4 (real, Attivazioni) | 25 | 87.56 | 0 | 0 | 31.27 |
+| Dataset 3 (real, Spesa) | 45 | 87.36 | 0 | 0 | 35.20 |
+| Dataset 4 (real, Attivazioni) | 25 | 87.56 | 0 | 0 | 31.30 |
 
 The results confirm that the system correctly assigns higher reliability scores to cleaner datasets and lower scores to messier ones. On the real NoiPA datasets, the agents detected thousands of genuine issues: 17,162 missing values and 216 numerical outliers in the Spesa dataset, and 47,503 missing values and 201 outliers in the Attivazioni dataset.
 
@@ -108,7 +110,7 @@ The results confirm that the system correctly assigns higher reliability scores 
 
 ---
 
-## Section 5 — Conclusions
+## Section 5 — Conclusions (Synthetic and Real Datasets)
 
 This project successfully built a modular multi-agent data quality system entirely in Python, without requiring any external services to function. The system automatically detects, reports, and fixes data quality issues across datasets of different sizes and structures. Testing on both synthetic and real NoiPA datasets confirmed that the agents behave correctly: clean datasets receive high reliability scores, while datasets with genuine problems receive appropriately low scores with detailed suggestions for improvement.
 
