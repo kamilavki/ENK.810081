@@ -1,0 +1,1006 @@
+Rata,Ente,Descrizione,Tipo imposta,Imposta,Spesa
+abc,,Ministero dell'interno,Erariali,Addizionali Regionali,1000000.0
+202405,99,Ministero della giustizia,Varie,Addizionali Regionali,23692.45
+202103,55,Ministero della salute,Previdenziali,IRAP,24050.4
+202211,99,Ministero della salute,Varie,Addizionali Comunali,14610.63
+202404,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,20208.61
+202206,12,Ministero della salute,Erariali,Addizionali Regionali,32812.64
+202402,12,Ministero dell'interno,Varie,Addizionali Regionali,26064.1
+202306,12,Ministero dell'interno,Varie,Addizionali Comunali,17482.82
+202112,99,Ministero della giustizia,Erariali,Addizionali Comunali,16983.96
+202401,12,Ministero della giustizia,Varie,IRAP,16817.37
+202310,10,Ministero della salute,Previdenziali,IRPEF,24331.6
+202512,55,Ministero del lavoro,Previdenziali,Addizionali Regionali,28038.2
+202001,55,Ministero della salute,Previdenziali,Addizionali Comunali,22910.84
+202211,10,Ministero della salute,Previdenziali,Addizionali Regionali,20785.81
+202112,99,Ministero della salute,Erariali,Addizionali Regionali,17779.22
+202303,99,Ministero della salute,Varie,Addizionali Comunali,21646.87
+202307,55,Ministero dell'interno,Previdenziali,IRAP,15899.39
+202309,12,Ministero del lavoro,Erariali,Addizionali Regionali,10321.17
+202205,99,Ministero dell'interno,Varie,IRAP,28184.13
+202207,99,Ministero del lavoro,Varie,Addizionali Comunali,14970.94
+202409,10,Ministero della giustizia,Erariali,IRPEF,18375.84
+202104,10,Ministero della salute,Erariali,IRPEF,23281.79
+202012,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,27172.33
+202502,99,Ministero del lavoro,Varie,Addizionali Comunali,21285.65
+202109,99,Ministero della giustizia,Varie,IRAP,14031.45
+202105,10,Ministero della giustizia,Erariali,Addizionali Regionali,18493.27
+202104,99,Ministero della salute,Varie,Addizionali Comunali,16607.57
+202312,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,19808.94
+202308,10,Ministero dell'interno,Varie,IRAP,26159.92
+202201,12,Ministero della salute,Erariali,Addizionali Regionali,7313.06
+202302,10,Ministero dell'interno,Erariali,Addizionali Comunali,17943.05
+202302,99,Ministero della giustizia,Previdenziali,Addizionali Comunali,17579.75
+202506,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,13716.19
+202510,10,Ministero dell'interno,Varie,IRAP,22927.45
+202306,55,Ministero della salute,Varie,Addizionali Regionali,12925.12
+202402,55,Ministero dell'interno,Erariali,Addizionali Regionali,13500.53
+202112,10,Ministero della salute,Previdenziali,Addizionali Regionali,24255.35
+202110,55,Ministero della giustizia,Previdenziali,Addizionali Regionali,27502.86
+202504,55,Ministero della salute,Previdenziali,IRPEF,19619.52
+202508,55,Ministero della salute,Varie,IRPEF,13913.02
+202507,12,Ministero del lavoro,Previdenziali,Addizionali Regionali,16472.23
+202309,55,Ministero dell'interno,Erariali,IRAP,25040.01
+202508,55,Ministero della giustizia,Erariali,IRPEF,20582.19
+202402,55,Ministero della salute,Varie,Addizionali Comunali,19494.81
+202408,12,Ministero della giustizia,Varie,IRPEF,21565.25
+202109,10,Ministero del lavoro,Previdenziali,Addizionali Comunali,19811.7
+202312,99,Ministero dell'interno,Varie,Addizionali Regionali,27728.56
+202309,55,Ministero della salute,Erariali,IRPEF,16254.28
+202401,10,Ministero dell'interno,Previdenziali,IRAP,15680.2
+202007,55,Ministero del lavoro,Erariali,IRPEF,13082.73
+202008,,Ministero del lavoro,Previdenziali,IRPEF,
+202012,10,Ministero della giustizia,Varie,IRPEF,14540.12
+202203,12,Ministero della salute,Previdenziali,Addizionali Regionali,21090.38
+202008,55,Ministero della giustizia,Previdenziali,IRAP,20104.74
+202203,55,Ministero del lavoro,Erariali,IRPEF,14604.62
+202011,12,Ministero dell'interno,Erariali,IRAP,22945.7
+202410,99,Ministero della giustizia,Previdenziali,Addizionali Regionali,27584.06
+202109,12,Ministero della giustizia,Varie,Addizionali Comunali,21789.19
+202307,55,Ministero dell'interno,Varie,IRPEF,7282.51
+202008,12,Ministero della giustizia,Erariali,IRAP,29935.65
+202302,99,Ministero dell'interno,Varie,IRAP,23734.62
+202007,12,Ministero della salute,Erariali,Addizionali Regionali,29782.09
+202508,99,Ministero dell'interno,Varie,IRPEF,25453.62
+202403,99,Ministero della salute,Previdenziali,Addizionali Comunali,26452.58
+202308,12,Ministero dell'interno,Erariali,IRAP,21026.33
+202511,12,Ministero del lavoro,Erariali,IRPEF,18688.52
+202201,10,Ministero del lavoro,Previdenziali,Addizionali Comunali,21867.41
+202205,55,Ministero della salute,Erariali,IRAP,16456.07
+202503,99,Ministero della salute,Varie,IRAP,22169.4
+202005,10,Ministero del lavoro,Varie,Addizionali Comunali,6866.07
+202107,12,Ministero della salute,Erariali,Addizionali Comunali,20214.66
+202507,55,Ministero dell'interno,Varie,Addizionali Regionali,26723.38
+202209,10,Ministero dell'interno,Erariali,IRPEF,20471.54
+202110,99,Ministero del lavoro,Previdenziali,IRPEF,28637.41
+202303,10,Ministero della giustizia,Erariali,Addizionali Regionali,18681.27
+202004,99,Ministero dell'interno,Previdenziali,IRAP,25013.25
+202404,12,Ministero della salute,Varie,Addizionali Comunali,15608.65
+202505,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,24809.78
+202411,55,Ministero della giustizia,Varie,Addizionali Comunali,21162.97
+202404,55,Ministero dell'interno,Erariali,IRAP,18901.25
+202407,12,Ministero dell'interno,Varie,Addizionali Comunali,7130.59
+202203,99,Ministero della giustizia,Erariali,Addizionali Comunali,18728.12
+202512,12,Ministero della giustizia,Erariali,Addizionali Regionali,21067.27
+202110,55,Ministero del lavoro,Previdenziali,IRAP,24143.55
+202409,12,Ministero della salute,Previdenziali,IRPEF,27804.75
+202406,12,Ministero del lavoro,Previdenziali,Addizionali Regionali,30175.16
+202312,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,26231.34
+202312,99,Ministero del lavoro,Varie,IRPEF,17189.55
+202311,10,Ministero del lavoro,Varie,Addizionali Regionali,18475.98
+202107,10,Ministero del lavoro,Varie,IRAP,23694.58
+202309,12,Ministero del lavoro,Erariali,Addizionali Comunali,22598.07
+202501,10,Ministero della salute,Varie,IRAP,28141.73
+202009,10,Ministero della salute,Varie,IRPEF,32396.95
+202209,12,Ministero della giustizia,Varie,IRPEF,31335.9
+202309,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,27469.69
+202207,55,Ministero del lavoro,Varie,IRAP,22639.51
+202508,10,Ministero della giustizia,Erariali,IRAP,26746.63
+202209,99,Ministero della giustizia,Previdenziali,IRPEF,28307.21
+202505,12,Ministero della giustizia,Erariali,IRAP,19263.5
+202003,55,Ministero della salute,Varie,IRPEF,17336.7
+202112,,Ministero del lavoro,Previdenziali,IRAP,
+202206,10,Ministero del lavoro,Erariali,IRAP,15618.08
+202004,55,Ministero dell'interno,Varie,IRAP,13090.02
+202001,12,Ministero del lavoro,Erariali,IRPEF,21249.51
+202104,99,Ministero del lavoro,Erariali,Addizionali Regionali,15001.24
+202307,12,Ministero della giustizia,Erariali,IRAP,16082.39
+202103,10,Ministero dell'interno,Varie,IRPEF,23506.28
+202005,99,Ministero del lavoro,Varie,IRPEF,20908.05
+202008,10,Ministero della salute,Erariali,IRAP,22148.12
+202011,10,Ministero del lavoro,Previdenziali,IRAP,26825.74
+202002,55,Ministero della giustizia,Previdenziali,Addizionali Regionali,24322.65
+202112,12,Ministero della salute,Varie,IRPEF,27594.43
+202507,99,Ministero della giustizia,Varie,IRPEF,20399.88
+202401,10,Ministero del lavoro,Varie,Addizionali Comunali,28058.95
+202003,10,Ministero della salute,Varie,IRPEF,21798.68
+202502,99,Ministero dell'interno,Varie,Addizionali Regionali,20843.53
+202412,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,27307.63
+202106,55,Ministero della salute,Varie,Addizionali Comunali,15639.23
+202307,55,Ministero della salute,Erariali,Addizionali Comunali,30118.0
+202208,55,Ministero della giustizia,Erariali,IRAP,18589.5
+202201,55,Ministero della salute,Previdenziali,IRAP,13909.46
+202508,10,Ministero della giustizia,Erariali,IRPEF,23267.51
+202404,99,Ministero del lavoro,Previdenziali,Addizionali Comunali,18113.39
+202106,99,Ministero della giustizia,Previdenziali,Addizionali Regionali,30129.04
+202511,99,Ministero della salute,Erariali,IRAP,17835.5
+202009,99,Ministero della salute,Varie,Addizionali Regionali,21572.24
+202311,12,Ministero del lavoro,Erariali,Addizionali Regionali,12872.03
+202503,99,Ministero della salute,Erariali,IRAP,24064.57
+202312,12,Ministero della salute,Previdenziali,IRAP,16113.05
+202204,12,Ministero dell'interno,Erariali,IRAP,23466.62
+202210,55,Ministero dell'interno,Previdenziali,IRAP,17858.27
+202203,12,Ministero del lavoro,Varie,Addizionali Comunali,9765.33
+202307,10,Ministero della giustizia,Varie,Addizionali Comunali,20655.95
+202309,12,Ministero dell'interno,Varie,Addizionali Comunali,20432.14
+202008,55,Ministero della giustizia,Erariali,Addizionali Comunali,24405.36
+202108,12,Ministero della salute,Previdenziali,IRPEF,27780.0
+202011,10,Ministero dell'interno,Varie,Addizionali Comunali,29562.05
+202309,10,Ministero del lavoro,Previdenziali,IRAP,24320.77
+202002,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,21393.1
+202510,55,Ministero del lavoro,Varie,Addizionali Comunali,12863.33
+202207,55,Ministero dell'interno,Varie,IRPEF,21010.1
+202310,99,Ministero della giustizia,Previdenziali,IRAP,21074.7
+202004,55,Ministero della salute,Varie,Addizionali Regionali,19006.8
+202301,10,Ministero della giustizia,Previdenziali,Addizionali Regionali,23164.84
+202101,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,25609.53
+202512,55,Ministero della salute,Varie,Addizionali Regionali,15907.98
+202405,12,Ministero della salute,Erariali,Addizionali Comunali,15830.08
+202207,55,Ministero dell'interno,Varie,Addizionali Comunali,19303.54
+202009,55,Ministero dell'interno,Erariali,IRAP,16923.85
+202203,10,Ministero dell'interno,Previdenziali,IRAP,11793.73
+202204,,Ministero dell'interno,Previdenziali,IRPEF,
+202508,10,Ministero dell'interno,Erariali,IRAP,13838.39
+202008,99,Ministero della salute,Previdenziali,IRAP,26042.25
+202311,10,Ministero della giustizia,Erariali,Addizionali Comunali,28514.14
+202008,55,Ministero dell'interno,Erariali,IRAP,14522.83
+202306,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,22730.37
+202303,10,Ministero della giustizia,Erariali,Addizionali Comunali,24367.58
+202509,10,Ministero dell'interno,Varie,IRAP,12538.66
+202209,55,Ministero della giustizia,Varie,IRPEF,20804.89
+202402,55,Ministero della giustizia,Previdenziali,IRPEF,32667.58
+202502,55,Ministero della salute,Previdenziali,Addizionali Regionali,23385.73
+202106,55,Ministero del lavoro,Erariali,Addizionali Regionali,18773.5
+202209,99,Ministero della salute,Erariali,IRAP,17199.07
+202301,99,Ministero del lavoro,Erariali,IRPEF,9887.69
+202301,12,Ministero del lavoro,Erariali,Addizionali Comunali,22352.37
+202505,55,Ministero del lavoro,Varie,Addizionali Regionali,29739.08
+202308,99,Ministero dell'interno,Varie,Addizionali Comunali,15932.28
+202201,10,Ministero della salute,Previdenziali,Addizionali Regionali,10322.08
+202012,55,Ministero del lavoro,Erariali,IRAP,16678.88
+202203,12,Ministero della giustizia,Erariali,IRPEF,24408.0
+202507,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,17857.5
+202506,12,Ministero della salute,Erariali,IRPEF,15897.66
+202503,10,Ministero del lavoro,Erariali,Addizionali Comunali,20095.77
+202508,99,Ministero della giustizia,Erariali,IRAP,21148.5
+202211,10,Ministero della salute,Erariali,IRPEF,13058.05
+202105,55,Ministero della salute,Erariali,IRAP,18913.58
+202501,12,Ministero dell'interno,Previdenziali,IRPEF,17513.66
+202301,10,Ministero della salute,Erariali,Addizionali Comunali,16795.48
+202412,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,14914.82
+202403,99,Ministero del lavoro,Erariali,IRAP,24706.29
+202303,99,Ministero dell'interno,Varie,Addizionali Comunali,16778.07
+202001,12,Ministero della giustizia,Varie,Addizionali Regionali,10025.27
+202312,10,Ministero dell'interno,Varie,IRPEF,21321.49
+202505,10,Ministero della giustizia,Varie,Addizionali Comunali,23626.0
+202503,99,Ministero dell'interno,Previdenziali,Addizionali Regionali,16019.92
+202309,10,Ministero della salute,Previdenziali,IRAP,17201.69
+202408,10,Ministero del lavoro,Erariali,Addizionali Regionali,16754.73
+202401,10,Ministero della giustizia,Varie,IRAP,18266.73
+202505,99,Ministero dell'interno,Previdenziali,IRAP,25534.25
+202212,12,Ministero dell'interno,Erariali,IRPEF,19429.7
+202004,55,Ministero dell'interno,Erariali,IRPEF,24197.97
+202405,12,Ministero della salute,Previdenziali,Addizionali Regionali,15155.84
+202003,55,Ministero della salute,Varie,IRPEF,18081.55
+202109,10,Ministero della giustizia,Erariali,IRPEF,24770.07
+202106,12,Ministero della giustizia,Varie,IRPEF,15971.97
+202103,55,Ministero della salute,Varie,Addizionali Regionali,25060.68
+202508,99,Ministero della giustizia,Varie,Addizionali Comunali,16858.08
+202106,99,Ministero del lavoro,Erariali,IRPEF,18391.69
+202111,12,Ministero del lavoro,Varie,IRPEF,28350.81
+202102,12,Ministero della salute,Erariali,Addizionali Regionali,17820.91
+abc,,Ministero della giustizia,Varie,Addizionali Comunali,
+202009,12,Ministero dell'interno,Erariali,IRPEF,23082.18
+202206,10,Ministero del lavoro,Varie,IRAP,21132.54
+202410,10,Ministero della salute,Previdenziali,Addizionali Regionali,21275.27
+202103,99,Ministero della giustizia,Varie,IRPEF,19717.3
+202109,99,Ministero della salute,Varie,IRPEF,13488.8
+202412,55,Ministero dell'interno,Erariali,IRAP,21741.45
+202107,99,Ministero del lavoro,Erariali,IRAP,16337.66
+202004,99,Ministero della salute,Varie,Addizionali Regionali,23878.84
+202404,12,Ministero della salute,Previdenziali,Addizionali Regionali,26860.31
+202008,99,Ministero della salute,Previdenziali,IRAP,10972.21
+202512,55,Ministero dell'interno,Erariali,Addizionali Regionali,26869.04
+202207,12,Ministero della salute,Previdenziali,IRAP,17944.71
+202302,55,Ministero dell'interno,Varie,IRPEF,19345.25
+202107,99,Ministero dell'interno,Erariali,IRAP,15438.06
+202503,55,Ministero dell'interno,Varie,IRAP,20942.34
+202010,12,Ministero del lavoro,Erariali,Addizionali Comunali,20334.07
+202506,10,Ministero del lavoro,Erariali,IRAP,25384.61
+202110,55,Ministero della salute,Erariali,IRAP,16293.03
+202501,55,Ministero della salute,Erariali,Addizionali Comunali,28304.01
+202310,12,Ministero del lavoro,Previdenziali,Addizionali Regionali,23323.57
+202506,12,Ministero della giustizia,Varie,Addizionali Comunali,20454.84
+202212,55,Ministero del lavoro,Varie,IRPEF,19096.08
+202401,99,Ministero dell'interno,Varie,Addizionali Comunali,18467.15
+202412,55,Ministero del lavoro,Erariali,IRPEF,18793.28
+202312,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,20842.01
+202407,10,Ministero della salute,Varie,Addizionali Comunali,18955.0
+202306,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,16797.35
+202404,99,Ministero della salute,Erariali,Addizionali Regionali,20872.3
+202503,55,Ministero dell'interno,Varie,IRPEF,15818.56
+202302,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,21612.33
+202310,55,Ministero dell'interno,Erariali,IRPEF,18884.66
+202503,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,23483.65
+202008,10,Ministero del lavoro,Varie,IRAP,24945.37
+202212,99,Ministero della salute,Varie,Addizionali Comunali,24943.4
+202107,12,Ministero della salute,Erariali,Addizionali Regionali,21590.53
+202105,99,Ministero del lavoro,Erariali,Addizionali Regionali,22174.16
+202105,12,Ministero della salute,Erariali,IRPEF,18386.24
+202507,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,23388.2
+202012,99,Ministero della salute,Previdenziali,IRPEF,23952.51
+202401,99,Ministero dell'interno,Previdenziali,IRPEF,12163.35
+202110,12,Ministero del lavoro,Erariali,IRAP,21891.74
+202002,99,Ministero della giustizia,Varie,IRAP,26840.65
+202506,12,Ministero del lavoro,Varie,Addizionali Regionali,18218.55
+202008,12,Ministero della giustizia,Previdenziali,IRPEF,17127.27
+202405,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,17900.68
+202007,12,Ministero del lavoro,Varie,Addizionali Comunali,12475.62
+202406,10,Ministero della salute,Varie,IRPEF,20629.92
+202407,12,Ministero della giustizia,Previdenziali,IRPEF,20149.83
+202212,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,20985.13
+202103,,Ministero della salute,Varie,Addizionali Comunali,1000000.0
+202406,55,Ministero del lavoro,Erariali,Addizionali Regionali,16010.03
+202012,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,21366.0
+202401,55,Ministero del lavoro,Varie,Addizionali Comunali,22215.99
+202504,99,Ministero della giustizia,Varie,Addizionali Regionali,17558.04
+202412,55,Ministero della salute,Varie,Addizionali Comunali,22100.59
+202110,10,Ministero dell'interno,Varie,IRPEF,20403.53
+202407,12,Ministero della giustizia,Erariali,IRPEF,16844.05
+202301,55,Ministero della giustizia,Varie,IRAP,21413.94
+202505,10,Ministero della giustizia,Previdenziali,IRPEF,18546.45
+202110,10,Ministero dell'interno,Erariali,Addizionali Comunali,23485.33
+202505,99,Ministero della salute,Varie,Addizionali Regionali,18804.17
+202302,99,Ministero della salute,Erariali,IRAP,13551.17
+202310,55,Ministero della salute,Previdenziali,Addizionali Regionali,21334.93
+202103,12,Ministero del lavoro,Varie,Addizionali Comunali,21147.02
+202101,10,Ministero del lavoro,Previdenziali,IRPEF,14594.31
+202404,55,Ministero del lavoro,Varie,IRAP,23752.68
+202101,10,Ministero dell'interno,Varie,Addizionali Comunali,23491.1
+202311,10,Ministero del lavoro,Varie,IRAP,15650.1
+202308,12,Ministero dell'interno,Varie,IRAP,16701.87
+202302,12,Ministero della salute,Varie,IRPEF,19289.96
+202212,55,Ministero del lavoro,Erariali,Addizionali Comunali,16205.74
+202001,12,Ministero del lavoro,Varie,Addizionali Regionali,23201.99
+202403,12,Ministero della giustizia,Varie,IRAP,20744.86
+202205,55,Ministero dell'interno,Erariali,IRAP,14532.21
+202303,12,Ministero della salute,Erariali,Addizionali Regionali,15887.65
+202001,99,Ministero della giustizia,Erariali,Addizionali Comunali,25938.6
+202111,10,Ministero della giustizia,Erariali,IRAP,27677.81
+202312,10,Ministero della salute,Erariali,IRAP,22693.64
+202502,10,Ministero della giustizia,Erariali,IRAP,18943.62
+202403,10,Ministero dell'interno,Varie,Addizionali Comunali,17800.19
+202103,55,Ministero dell'interno,Varie,Addizionali Comunali,22748.5
+202010,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,20379.6
+202410,10,Ministero della giustizia,Varie,Addizionali Comunali,11949.64
+202110,10,Ministero del lavoro,Varie,Addizionali Comunali,25159.34
+202502,10,Ministero della giustizia,Erariali,IRPEF,26729.02
+202209,99,Ministero dell'interno,Erariali,Addizionali Regionali,23686.26
+202310,10,Ministero dell'interno,Varie,IRAP,14541.94
+202402,99,Ministero dell'interno,Previdenziali,Addizionali Comunali,16815.87
+202411,55,Ministero della giustizia,Erariali,IRAP,10711.4
+202408,12,Ministero dell'interno,Varie,IRAP,27980.24
+202309,10,Ministero della giustizia,Varie,IRPEF,18216.31
+202409,12,Ministero del lavoro,Previdenziali,Addizionali Comunali,31666.45
+202310,12,Ministero della giustizia,Previdenziali,Addizionali Regionali,29776.15
+202409,55,Ministero del lavoro,Erariali,Addizionali Comunali,15482.87
+202201,12,Ministero della giustizia,Previdenziali,IRAP,16458.66
+202204,99,Ministero del lavoro,Varie,Addizionali Regionali,22330.95
+202101,12,Ministero dell'interno,Varie,Addizionali Comunali,11227.29
+202505,12,Ministero del lavoro,Previdenziali,IRAP,17808.7
+202301,12,Ministero dell'interno,Previdenziali,IRAP,17309.2
+202407,,Ministero dell'interno,Previdenziali,IRPEF,
+202003,10,Ministero del lavoro,Previdenziali,IRPEF,20805.09
+202001,99,Ministero della giustizia,Erariali,IRPEF,18576.17
+202004,99,Ministero della giustizia,Previdenziali,IRAP,16842.58
+202006,10,Ministero della salute,Erariali,Addizionali Comunali,24470.25
+202411,99,Ministero della giustizia,Varie,IRPEF,17516.45
+202201,10,Ministero della salute,Previdenziali,Addizionali Comunali,19748.59
+202312,55,Ministero della giustizia,Erariali,IRPEF,16804.38
+202409,12,Ministero della giustizia,Previdenziali,Addizionali Regionali,12412.31
+202212,12,Ministero dell'interno,Varie,Addizionali Regionali,15019.82
+202007,99,Ministero della salute,Varie,IRPEF,17490.14
+202304,10,Ministero della giustizia,Varie,IRAP,18683.73
+202210,10,Ministero della salute,Previdenziali,IRPEF,18902.88
+202405,99,Ministero dell'interno,Previdenziali,IRPEF,19555.4
+202212,10,Ministero dell'interno,Erariali,IRAP,17556.56
+202004,55,Ministero della salute,Varie,Addizionali Regionali,26745.63
+202205,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,24739.92
+202305,99,Ministero del lavoro,Varie,IRPEF,19324.45
+202007,99,Ministero del lavoro,Varie,IRAP,21271.29
+202405,10,Ministero dell'interno,Erariali,IRPEF,18139.56
+202110,99,Ministero del lavoro,Erariali,IRAP,5782.57
+202510,55,Ministero della giustizia,Erariali,Addizionali Comunali,20102.47
+202403,10,Ministero della salute,Erariali,Addizionali Comunali,21528.07
+202411,10,Ministero della giustizia,Varie,Addizionali Regionali,11936.69
+202202,10,Ministero della salute,Erariali,IRAP,22497.06
+202309,10,Ministero dell'interno,Erariali,IRAP,18597.12
+202110,55,Ministero della giustizia,Erariali,Addizionali Regionali,21689.67
+202301,10,Ministero dell'interno,Erariali,Addizionali Regionali,18748.01
+202406,99,Ministero dell'interno,Varie,IRAP,26254.77
+202508,55,Ministero della salute,Erariali,Addizionali Regionali,21131.14
+202109,12,Ministero della salute,Varie,Addizionali Comunali,25012.08
+202111,12,Ministero della salute,Previdenziali,IRPEF,25423.63
+202102,99,Ministero della giustizia,Varie,Addizionali Comunali,14402.22
+202405,99,Ministero del lavoro,Varie,Addizionali Regionali,16304.92
+202503,55,Ministero della salute,Erariali,IRAP,22258.05
+202401,12,Ministero della salute,Previdenziali,IRAP,18172.31
+202504,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,18806.97
+202007,12,Ministero della salute,Previdenziali,IRAP,26432.82
+202004,12,Ministero della giustizia,Previdenziali,Addizionali Regionali,18448.17
+202306,12,Ministero dell'interno,Varie,Addizionali Comunali,15155.35
+202303,10,Ministero della salute,Previdenziali,IRAP,15831.0
+202412,99,Ministero della salute,Varie,IRPEF,30911.78
+202507,10,Ministero dell'interno,Varie,IRPEF,19108.9
+202210,12,Ministero dell'interno,Varie,Addizionali Regionali,13178.76
+202103,55,Ministero dell'interno,Previdenziali,IRAP,11152.71
+202503,55,Ministero della salute,Erariali,Addizionali Regionali,16876.82
+202402,12,Ministero del lavoro,Erariali,Addizionali Comunali,19017.39
+202310,12,Ministero del lavoro,Previdenziali,IRPEF,24745.87
+202312,55,Ministero del lavoro,Erariali,Addizionali Comunali,24261.73
+202409,10,Ministero della salute,Erariali,IRAP,19968.27
+202003,,Ministero dell'interno,Varie,Addizionali Regionali,
+202412,12,Ministero della salute,Varie,Addizionali Regionali,21698.01
+202509,10,Ministero dell'interno,Previdenziali,Addizionali Regionali,11256.27
+202301,55,Ministero della salute,Previdenziali,Addizionali Comunali,29905.4
+202008,10,Ministero della salute,Erariali,IRPEF,23270.53
+202006,12,Ministero dell'interno,Varie,Addizionali Comunali,24334.95
+202406,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,14629.23
+202112,10,Ministero dell'interno,Previdenziali,IRAP,26413.24
+202405,99,Ministero della giustizia,Previdenziali,IRAP,17699.91
+202505,55,Ministero della giustizia,Previdenziali,IRAP,15237.21
+202212,55,Ministero dell'interno,Previdenziali,IRPEF,19804.14
+202404,99,Ministero della salute,Previdenziali,IRPEF,19687.22
+202203,99,Ministero della giustizia,Erariali,IRAP,14607.31
+202309,55,Ministero della giustizia,Varie,IRAP,15525.31
+202109,99,Ministero della salute,Varie,IRPEF,15133.84
+202001,12,Ministero della salute,Previdenziali,Addizionali Regionali,15181.42
+202406,12,Ministero del lavoro,Varie,IRPEF,18059.51
+202503,12,Ministero della salute,Varie,IRPEF,13055.07
+202011,55,Ministero dell'interno,Varie,IRPEF,16543.13
+202310,99,Ministero dell'interno,Previdenziali,IRAP,25225.67
+202512,99,Ministero del lavoro,Previdenziali,Addizionali Regionali,24116.55
+202305,10,Ministero della giustizia,Varie,IRPEF,14750.6
+202112,10,Ministero della giustizia,Varie,IRAP,24791.02
+202310,99,Ministero della salute,Previdenziali,Addizionali Comunali,10167.8
+202112,99,Ministero dell'interno,Erariali,Addizionali Comunali,32145.72
+202112,99,Ministero della giustizia,Varie,IRPEF,26501.57
+202305,55,Ministero del lavoro,Erariali,Addizionali Comunali,17201.34
+202004,99,Ministero del lavoro,Varie,Addizionali Regionali,21912.13
+202206,10,Ministero dell'interno,Erariali,Addizionali Comunali,12995.4
+202009,55,Ministero del lavoro,Erariali,Addizionali Comunali,20302.21
+202005,99,Ministero del lavoro,Erariali,Addizionali Regionali,19081.68
+202312,10,Ministero dell'interno,Previdenziali,IRPEF,15826.18
+202403,55,Ministero della salute,Erariali,IRPEF,17657.21
+202406,99,Ministero della salute,Erariali,Addizionali Regionali,17165.06
+202103,99,Ministero del lavoro,Erariali,Addizionali Regionali,14341.32
+202409,99,Ministero della salute,Varie,Addizionali Regionali,15709.26
+202110,55,Ministero della salute,Erariali,Addizionali Comunali,12790.78
+202502,10,Ministero del lavoro,Varie,Addizionali Regionali,24286.65
+202205,10,Ministero della salute,Erariali,IRAP,15339.44
+202006,12,Ministero del lavoro,Erariali,Addizionali Comunali,13889.9
+202002,99,Ministero della giustizia,Previdenziali,IRPEF,24207.52
+202011,12,Ministero dell'interno,Varie,IRPEF,21848.1
+202410,12,Ministero dell'interno,Erariali,IRPEF,24022.51
+202006,10,Ministero della salute,Varie,Addizionali Comunali,24580.42
+202211,55,Ministero della salute,Varie,IRAP,29687.27
+202001,55,Ministero della salute,Previdenziali,Addizionali Regionali,19219.8
+202109,10,Ministero dell'interno,Previdenziali,Addizionali Regionali,12711.96
+202201,55,Ministero della giustizia,Previdenziali,IRPEF,21355.19
+202407,12,Ministero della giustizia,Previdenziali,IRPEF,16654.98
+202512,99,Ministero dell'interno,Previdenziali,Addizionali Comunali,15212.47
+abc,,Ministero della giustizia,Previdenziali,IRAP,
+202406,99,Ministero dell'interno,Previdenziali,Addizionali Regionali,24328.76
+202205,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,15820.03
+202405,99,Ministero del lavoro,Erariali,Addizionali Regionali,26371.94
+202410,55,Ministero del lavoro,Varie,IRPEF,15051.93
+202103,55,Ministero dell'interno,Previdenziali,Addizionali Regionali,18780.48
+202005,12,Ministero della giustizia,Previdenziali,IRAP,21931.54
+202509,55,Ministero della salute,Varie,IRAP,18060.5
+202501,12,Ministero della giustizia,Erariali,IRPEF,11119.99
+202204,12,Ministero del lavoro,Varie,IRAP,24637.04
+202501,12,Ministero del lavoro,Varie,IRAP,16882.68
+202008,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,23724.49
+202112,10,Ministero della giustizia,Varie,Addizionali Regionali,13679.28
+202110,55,Ministero della salute,Varie,IRPEF,14532.82
+202106,12,Ministero della salute,Previdenziali,IRPEF,24312.17
+202503,10,Ministero della giustizia,Previdenziali,IRPEF,21702.54
+202202,12,Ministero della giustizia,Previdenziali,IRPEF,17807.07
+202301,99,Ministero della giustizia,Previdenziali,IRPEF,21775.16
+202512,99,Ministero della giustizia,Varie,IRAP,15229.8
+202411,99,Ministero dell'interno,Varie,Addizionali Comunali,20551.3
+202001,55,Ministero della giustizia,Erariali,IRPEF,20642.77
+202405,12,Ministero della salute,Erariali,Addizionali Comunali,18131.09
+202502,99,Ministero del lavoro,Varie,Addizionali Comunali,15823.57
+202203,10,Ministero dell'interno,Erariali,IRAP,20351.24
+202512,99,Ministero della giustizia,Varie,IRPEF,19725.09
+202106,99,Ministero del lavoro,Erariali,IRAP,17670.89
+202102,99,Ministero dell'interno,Previdenziali,IRPEF,14830.93
+202111,55,Ministero del lavoro,Erariali,IRAP,20062.39
+202202,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,17683.39
+202309,12,Ministero della giustizia,Previdenziali,IRPEF,14826.71
+202501,10,Ministero della salute,Previdenziali,Addizionali Regionali,20217.65
+202307,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,28041.53
+202103,55,Ministero della giustizia,Erariali,Addizionali Regionali,18165.86
+202005,55,Ministero dell'interno,Varie,Addizionali Comunali,27488.88
+202404,55,Ministero della salute,Previdenziali,IRAP,30571.66
+202108,55,Ministero dell'interno,Erariali,IRPEF,15232.91
+202010,12,Ministero del lavoro,Previdenziali,Addizionali Comunali,20045.22
+202012,99,Ministero della giustizia,Erariali,IRAP,30518.66
+202308,12,Ministero del lavoro,Erariali,IRPEF,19394.6
+202402,10,Ministero dell'interno,Erariali,IRPEF,20184.06
+202505,55,Ministero della giustizia,Varie,Addizionali Comunali,11649.97
+202111,55,Ministero della giustizia,Erariali,IRPEF,17341.69
+202211,10,Ministero dell'interno,Erariali,Addizionali Comunali,22777.94
+202209,12,Ministero dell'interno,Varie,IRPEF,32146.41
+202206,99,Ministero dell'interno,Varie,Addizionali Regionali,19019.97
+202308,99,Ministero dell'interno,Erariali,IRAP,11686.87
+202308,10,Ministero dell'interno,Varie,Addizionali Regionali,12973.75
+202003,99,Ministero della giustizia,Previdenziali,Addizionali Comunali,19821.05
+202211,12,Ministero dell'interno,Previdenziali,Addizionali Regionali,25886.03
+202402,12,Ministero della giustizia,Varie,Addizionali Comunali,23186.77
+202410,,Ministero della giustizia,Varie,IRPEF,
+202203,12,Ministero dell'interno,Erariali,IRPEF,26545.72
+202405,55,Ministero dell'interno,Varie,Addizionali Comunali,16398.85
+202112,10,Ministero della salute,Erariali,Addizionali Regionali,20095.47
+202106,12,Ministero della giustizia,Previdenziali,IRPEF,17398.09
+202406,10,Ministero dell'interno,Varie,IRAP,18642.72
+202005,99,Ministero dell'interno,Erariali,IRPEF,14968.65
+202012,12,Ministero dell'interno,Erariali,IRAP,18280.12
+202102,55,Ministero della salute,Previdenziali,Addizionali Regionali,19861.42
+202010,12,Ministero della salute,Varie,IRAP,18142.64
+202411,10,Ministero del lavoro,Previdenziali,IRAP,19194.69
+202010,10,Ministero della giustizia,Erariali,IRAP,22025.2
+202009,12,Ministero del lavoro,Erariali,IRAP,26193.48
+202508,55,Ministero dell'interno,Varie,IRPEF,26555.78
+202511,55,Ministero della salute,Erariali,IRAP,23807.11
+202401,55,Ministero della salute,Varie,IRPEF,13700.09
+202104,10,Ministero del lavoro,Previdenziali,IRAP,18197.95
+202008,12,Ministero della salute,Varie,Addizionali Comunali,18628.57
+202003,99,Ministero dell'interno,Varie,Addizionali Regionali,16714.25
+202404,10,Ministero della salute,Erariali,IRAP,21711.76
+202510,55,Ministero del lavoro,Erariali,Addizionali Comunali,12028.36
+202307,12,Ministero dell'interno,Varie,IRAP,28467.83
+202508,55,Ministero del lavoro,Erariali,IRAP,25976.1
+202110,99,Ministero della salute,Erariali,IRAP,22391.01
+202511,55,Ministero del lavoro,Erariali,Addizionali Comunali,19689.45
+202207,55,Ministero del lavoro,Varie,Addizionali Regionali,26144.2
+202207,99,Ministero della giustizia,Erariali,Addizionali Comunali,23447.02
+202511,12,Ministero della salute,Varie,Addizionali Regionali,25533.19
+202302,10,Ministero della salute,Erariali,IRAP,19704.74
+202106,12,Ministero del lavoro,Previdenziali,IRPEF,28946.57
+202203,99,Ministero della giustizia,Erariali,IRAP,25834.44
+202007,55,Ministero della salute,Erariali,Addizionali Regionali,22547.68
+202412,12,Ministero dell'interno,Varie,Addizionali Comunali,26279.86
+202107,10,Ministero del lavoro,Varie,IRAP,17904.19
+202001,99,Ministero della salute,Erariali,Addizionali Comunali,14162.5
+202510,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,21607.75
+202512,10,Ministero della salute,Erariali,Addizionali Comunali,19714.55
+202001,99,Ministero dell'interno,Erariali,IRAP,19011.41
+202404,10,Ministero del lavoro,Previdenziali,Addizionali Comunali,26081.56
+202004,99,Ministero della salute,Varie,Addizionali Comunali,20835.7
+202103,55,Ministero della salute,Erariali,IRAP,21317.85
+202002,12,Ministero della giustizia,Varie,Addizionali Comunali,18364.74
+202306,10,Ministero del lavoro,Varie,IRAP,24405.62
+202108,99,Ministero dell'interno,Previdenziali,Addizionali Regionali,23509.38
+202012,10,Ministero della salute,Previdenziali,Addizionali Regionali,24368.3
+202210,10,Ministero della salute,Varie,Addizionali Regionali,17513.68
+202005,12,Ministero dell'interno,Erariali,Addizionali Comunali,26520.44
+202504,55,Ministero del lavoro,Varie,IRPEF,29193.84
+202102,10,Ministero della giustizia,Erariali,IRPEF,24210.19
+202208,99,Ministero della giustizia,Erariali,Addizionali Comunali,15953.56
+202206,,Ministero della salute,Previdenziali,IRPEF,1000000.0
+202409,55,Ministero dell'interno,Erariali,IRAP,18123.12
+202005,99,Ministero della salute,Erariali,IRPEF,17178.11
+202505,55,Ministero dell'interno,Varie,Addizionali Comunali,19644.54
+202506,99,Ministero della giustizia,Previdenziali,Addizionali Comunali,23162.21
+202311,12,Ministero del lavoro,Erariali,IRAP,21449.76
+202508,10,Ministero dell'interno,Erariali,Addizionali Regionali,21011.45
+202007,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,18793.99
+202203,10,Ministero della salute,Varie,IRAP,19630.77
+202404,10,Ministero dell'interno,Previdenziali,IRPEF,23982.88
+202502,10,Ministero del lavoro,Previdenziali,IRPEF,9940.21
+202312,12,Ministero della salute,Erariali,IRAP,19943.05
+202204,10,Ministero della salute,Erariali,IRAP,21439.94
+202506,12,Ministero della giustizia,Varie,Addizionali Comunali,23917.92
+202008,55,Ministero dell'interno,Erariali,IRPEF,14949.77
+202503,99,Ministero della salute,Erariali,IRAP,14685.45
+202509,99,Ministero del lavoro,Previdenziali,IRPEF,22919.77
+202111,10,Ministero dell'interno,Erariali,IRAP,10477.74
+202103,12,Ministero del lavoro,Varie,IRPEF,26660.95
+202412,99,Ministero della salute,Previdenziali,Addizionali Regionali,21132.96
+202406,12,Ministero del lavoro,Varie,Addizionali Comunali,27793.61
+202106,12,Ministero della giustizia,Previdenziali,IRPEF,14564.64
+202303,10,Ministero del lavoro,Erariali,Addizionali Regionali,17818.2
+202301,99,Ministero dell'interno,Previdenziali,IRPEF,7960.66
+202301,10,Ministero del lavoro,Previdenziali,IRPEF,16021.55
+202301,10,Ministero del lavoro,Erariali,Addizionali Regionali,19080.77
+202106,99,Ministero della giustizia,Erariali,IRPEF,10186.46
+202411,99,Ministero del lavoro,Varie,IRPEF,18026.87
+202311,55,Ministero del lavoro,Varie,Addizionali Comunali,10063.3
+202201,55,Ministero della salute,Erariali,Addizionali Regionali,18712.7
+202502,12,Ministero della salute,Erariali,Addizionali Regionali,25735.56
+202105,99,Ministero dell'interno,Erariali,IRAP,19825.1
+202112,55,Ministero della salute,Previdenziali,IRPEF,28291.04
+202108,12,Ministero della salute,Previdenziali,Addizionali Comunali,23931.46
+202104,12,Ministero della salute,Previdenziali,IRPEF,26740.74
+202005,12,Ministero della salute,Erariali,IRPEF,16175.27
+202001,55,Ministero della giustizia,Varie,IRAP,16054.29
+202011,99,Ministero della salute,Erariali,IRPEF,21728.07
+202507,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,12111.49
+202201,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,22355.72
+202412,55,Ministero della salute,Erariali,IRAP,18380.4
+202302,55,Ministero del lavoro,Erariali,IRPEF,26649.98
+202505,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,23397.56
+202209,10,Ministero del lavoro,Previdenziali,IRPEF,25483.53
+202112,55,Ministero del lavoro,Previdenziali,IRPEF,16228.97
+202203,99,Ministero della salute,Erariali,IRPEF,25241.05
+202008,10,Ministero dell'interno,Previdenziali,IRAP,27223.56
+202512,55,Ministero della salute,Previdenziali,IRPEF,19806.43
+202408,10,Ministero dell'interno,Varie,Addizionali Comunali,16303.25
+202209,99,Ministero dell'interno,Erariali,IRPEF,16391.06
+202412,,Ministero della salute,Varie,Addizionali Comunali,
+202503,10,Ministero della salute,Varie,IRPEF,33421.73
+202405,99,Ministero dell'interno,Previdenziali,Addizionali Comunali,15091.77
+202403,55,Ministero della salute,Erariali,Addizionali Comunali,14707.4
+202210,10,Ministero dell'interno,Previdenziali,IRPEF,24607.07
+202504,10,Ministero del lavoro,Erariali,IRPEF,16230.43
+202010,55,Ministero della salute,Varie,Addizionali Comunali,25091.78
+202002,12,Ministero del lavoro,Erariali,Addizionali Regionali,22326.73
+202503,55,Ministero della giustizia,Previdenziali,IRAP,19880.11
+202406,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,22206.36
+202007,55,Ministero del lavoro,Previdenziali,Addizionali Regionali,21900.99
+202009,99,Ministero dell'interno,Erariali,IRPEF,19101.97
+202001,55,Ministero del lavoro,Varie,IRAP,11218.19
+202105,10,Ministero della salute,Varie,Addizionali Regionali,20893.25
+202207,55,Ministero dell'interno,Erariali,IRPEF,27865.3
+202206,12,Ministero della giustizia,Previdenziali,Addizionali Regionali,11956.16
+202503,55,Ministero della salute,Varie,Addizionali Regionali,15171.07
+202208,12,Ministero della giustizia,Previdenziali,IRPEF,22134.13
+202104,99,Ministero del lavoro,Erariali,IRPEF,20192.96
+202401,12,Ministero della salute,Previdenziali,IRPEF,22055.91
+202307,55,Ministero della salute,Varie,IRAP,16503.41
+202204,10,Ministero della giustizia,Varie,Addizionali Regionali,25812.29
+202406,12,Ministero della salute,Previdenziali,IRPEF,20234.5
+202001,99,Ministero della salute,Erariali,Addizionali Comunali,23484.93
+202405,12,Ministero della salute,Previdenziali,Addizionali Regionali,21601.39
+202207,12,Ministero del lavoro,Erariali,Addizionali Comunali,20877.47
+202004,12,Ministero della giustizia,Previdenziali,IRAP,23134.17
+202502,99,Ministero della salute,Varie,IRPEF,20932.44
+202105,55,Ministero dell'interno,Erariali,Addizionali Comunali,14049.0
+202210,12,Ministero dell'interno,Erariali,IRAP,25436.78
+202006,12,Ministero dell'interno,Erariali,IRPEF,24090.64
+202504,10,Ministero dell'interno,Varie,Addizionali Comunali,9465.75
+202408,99,Ministero del lavoro,Previdenziali,Addizionali Comunali,16729.0
+202308,12,Ministero della salute,Varie,IRAP,25211.8
+202408,99,Ministero della giustizia,Erariali,IRPEF,10865.36
+202404,12,Ministero della salute,Previdenziali,IRPEF,24717.83
+202302,55,Ministero del lavoro,Varie,Addizionali Comunali,19293.89
+202203,55,Ministero dell'interno,Erariali,Addizionali Comunali,26701.41
+202204,12,Ministero del lavoro,Erariali,Addizionali Comunali,19994.27
+202310,55,Ministero della salute,Varie,IRPEF,16389.66
+202211,12,Ministero della giustizia,Varie,IRAP,21540.43
+202404,55,Ministero del lavoro,Varie,IRAP,19848.07
+202210,10,Ministero della giustizia,Erariali,IRPEF,15945.74
+202506,10,Ministero del lavoro,Varie,Addizionali Regionali,31091.72
+202111,10,Ministero della giustizia,Erariali,IRAP,15144.51
+202310,99,Ministero della giustizia,Varie,Addizionali Comunali,8785.22
+202408,99,Ministero dell'interno,Erariali,Addizionali Regionali,27908.49
+202502,10,Ministero della giustizia,Erariali,Addizionali Regionali,17082.18
+202001,99,Ministero dell'interno,Previdenziali,IRAP,18516.13
+202311,55,Ministero della salute,Varie,Addizionali Regionali,18210.47
+abc,,Ministero della salute,Varie,Addizionali Regionali,
+202304,12,Ministero dell'interno,Erariali,IRAP,16169.04
+202408,12,Ministero dell'interno,Erariali,IRAP,15015.91
+202408,10,Ministero del lavoro,Erariali,Addizionali Regionali,20323.8
+202101,99,Ministero del lavoro,Previdenziali,Addizionali Comunali,17990.06
+202310,55,Ministero del lavoro,Previdenziali,IRPEF,23651.81
+202006,55,Ministero della salute,Erariali,Addizionali Regionali,22413.47
+202208,10,Ministero del lavoro,Varie,Addizionali Regionali,15362.44
+202006,55,Ministero della giustizia,Varie,Addizionali Comunali,20542.61
+202207,55,Ministero della giustizia,Previdenziali,Addizionali Regionali,17910.81
+202005,55,Ministero del lavoro,Previdenziali,Addizionali Regionali,15041.7
+202410,55,Ministero della giustizia,Erariali,IRPEF,23447.16
+202504,99,Ministero della salute,Varie,IRPEF,19393.37
+202507,55,Ministero della giustizia,Erariali,IRPEF,17962.25
+202001,12,Ministero della salute,Previdenziali,IRAP,15722.16
+202507,10,Ministero dell'interno,Varie,IRAP,14860.32
+202208,99,Ministero dell'interno,Varie,IRPEF,29943.84
+202409,55,Ministero dell'interno,Previdenziali,IRPEF,21670.59
+202409,99,Ministero dell'interno,Erariali,IRAP,14544.35
+202104,55,Ministero della giustizia,Erariali,Addizionali Comunali,21439.33
+202005,12,Ministero del lavoro,Varie,Addizionali Regionali,25310.08
+202109,10,Ministero della giustizia,Previdenziali,Addizionali Regionali,20837.59
+202204,55,Ministero della salute,Varie,IRPEF,26870.11
+202010,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,12285.93
+202206,55,Ministero della giustizia,Erariali,IRAP,10043.39
+202107,55,Ministero della salute,Previdenziali,IRPEF,21302.59
+202111,10,Ministero dell'interno,Erariali,Addizionali Comunali,21382.48
+202111,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,3302.5
+202011,12,Ministero dell'interno,Varie,Addizionali Comunali,16882.12
+202212,10,Ministero del lavoro,Erariali,IRAP,14956.69
+202203,55,Ministero della salute,Varie,IRAP,13040.27
+202508,12,Ministero della salute,Varie,Addizionali Regionali,14944.79
+202007,12,Ministero della giustizia,Erariali,Addizionali Regionali,22978.94
+202306,12,Ministero del lavoro,Erariali,Addizionali Comunali,14912.97
+202408,55,Ministero dell'interno,Varie,Addizionali Comunali,15084.39
+202001,99,Ministero del lavoro,Varie,IRAP,11905.97
+202411,55,Ministero della salute,Varie,Addizionali Regionali,26344.55
+202510,10,Ministero della salute,Varie,Addizionali Comunali,22173.16
+202302,10,Ministero della giustizia,Erariali,Addizionali Regionali,7538.22
+202401,55,Ministero della giustizia,Erariali,Addizionali Regionali,15088.8
+202004,55,Ministero della salute,Varie,Addizionali Comunali,22642.59
+202001,12,Ministero dell'interno,Previdenziali,IRAP,26406.96
+202306,55,Ministero dell'interno,Previdenziali,Addizionali Comunali,24204.19
+202512,12,Ministero del lavoro,Erariali,Addizionali Comunali,18221.59
+202408,10,Ministero della salute,Varie,Addizionali Regionali,10343.12
+202007,12,Ministero della salute,Varie,Addizionali Comunali,24351.24
+202007,55,Ministero dell'interno,Erariali,IRAP,18515.52
+202211,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,20344.31
+202201,99,Ministero della salute,Previdenziali,IRAP,19112.9
+202408,12,Ministero della giustizia,Previdenziali,IRAP,13222.35
+202202,,Ministero della salute,Erariali,Addizionali Regionali,
+202003,12,Ministero della salute,Previdenziali,IRPEF,21132.3
+202102,10,Ministero dell'interno,Erariali,IRPEF,17871.06
+202512,10,Ministero dell'interno,Erariali,Addizionali Regionali,22355.53
+202002,12,Ministero della giustizia,Varie,Addizionali Comunali,13130.0
+202506,99,Ministero della giustizia,Previdenziali,Addizionali Regionali,18654.99
+202204,10,Ministero del lavoro,Erariali,IRAP,20130.64
+202008,10,Ministero della salute,Previdenziali,IRPEF,11325.36
+202407,10,Ministero dell'interno,Previdenziali,Addizionali Regionali,19714.52
+202210,99,Ministero della giustizia,Varie,Addizionali Comunali,23668.23
+202103,99,Ministero del lavoro,Previdenziali,Addizionali Regionali,18483.85
+202502,55,Ministero del lavoro,Varie,IRPEF,19829.43
+202301,12,Ministero dell'interno,Erariali,Addizionali Regionali,22811.72
+202302,99,Ministero dell'interno,Previdenziali,Addizionali Regionali,18061.0
+202408,12,Ministero del lavoro,Erariali,IRPEF,18511.01
+202009,55,Ministero della giustizia,Previdenziali,IRAP,14116.48
+202208,12,Ministero del lavoro,Erariali,IRAP,19925.32
+202208,99,Ministero della salute,Previdenziali,IRPEF,18325.76
+202509,12,Ministero della salute,Previdenziali,Addizionali Regionali,22495.45
+202403,99,Ministero dell'interno,Previdenziali,IRPEF,22817.3
+202201,12,Ministero della giustizia,Previdenziali,IRAP,23956.05
+202308,99,Ministero della giustizia,Previdenziali,Addizionali Comunali,17458.7
+202103,99,Ministero della salute,Previdenziali,Addizionali Regionali,9117.09
+202508,12,Ministero del lavoro,Previdenziali,IRAP,23708.2
+202511,55,Ministero dell'interno,Previdenziali,Addizionali Regionali,22155.6
+202304,10,Ministero del lavoro,Previdenziali,IRPEF,16823.54
+202406,55,Ministero del lavoro,Erariali,Addizionali Comunali,22774.7
+202407,12,Ministero del lavoro,Varie,IRPEF,12757.05
+202107,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,25151.2
+202107,99,Ministero della salute,Varie,Addizionali Regionali,18331.88
+202007,10,Ministero della giustizia,Previdenziali,Addizionali Regionali,15855.36
+202403,12,Ministero della salute,Previdenziali,IRPEF,16891.49
+202403,12,Ministero dell'interno,Erariali,Addizionali Comunali,18842.58
+202312,12,Ministero dell'interno,Erariali,Addizionali Comunali,19939.94
+202102,10,Ministero del lavoro,Varie,Addizionali Regionali,20241.4
+202005,99,Ministero della salute,Erariali,IRPEF,17851.96
+202311,12,Ministero della salute,Erariali,Addizionali Comunali,21001.2
+202102,55,Ministero della salute,Varie,Addizionali Regionali,20041.4
+202207,12,Ministero del lavoro,Erariali,IRAP,16762.14
+202304,12,Ministero del lavoro,Previdenziali,IRPEF,16009.05
+202405,12,Ministero dell'interno,Varie,IRAP,23041.83
+202509,12,Ministero della giustizia,Varie,IRPEF,22621.63
+202105,99,Ministero della salute,Previdenziali,Addizionali Regionali,20285.68
+202303,55,Ministero della salute,Erariali,Addizionali Comunali,24620.98
+202310,99,Ministero della giustizia,Varie,Addizionali Comunali,10193.36
+202512,55,Ministero della salute,Varie,Addizionali Comunali,17178.03
+202010,12,Ministero del lavoro,Previdenziali,IRPEF,14218.41
+202508,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,31281.36
+202207,99,Ministero della salute,Erariali,IRAP,23566.1
+202002,10,Ministero del lavoro,Varie,Addizionali Regionali,19604.69
+202201,,Ministero del lavoro,Erariali,IRAP,
+202509,12,Ministero della salute,Erariali,IRPEF,25581.38
+202109,99,Ministero dell'interno,Previdenziali,IRPEF,25528.16
+202006,12,Ministero della giustizia,Varie,IRAP,24608.52
+202511,99,Ministero del lavoro,Varie,IRAP,18687.3
+202504,12,Ministero dell'interno,Varie,IRAP,17493.17
+202110,12,Ministero del lavoro,Previdenziali,Addizionali Regionali,15189.05
+202402,55,Ministero del lavoro,Previdenziali,IRAP,22512.24
+202411,12,Ministero della giustizia,Previdenziali,IRPEF,19205.32
+202502,55,Ministero del lavoro,Previdenziali,IRPEF,17907.64
+202410,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,17646.69
+202309,10,Ministero della giustizia,Varie,IRAP,27250.96
+202502,12,Ministero della giustizia,Erariali,Addizionali Regionali,24763.4
+202005,10,Ministero dell'interno,Varie,Addizionali Regionali,29151.97
+202006,10,Ministero della salute,Erariali,Addizionali Regionali,22645.08
+202112,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,20284.77
+202410,10,Ministero della salute,Erariali,IRPEF,19872.99
+202505,55,Ministero della salute,Varie,Addizionali Regionali,14898.49
+202209,99,Ministero della giustizia,Varie,IRPEF,13692.91
+202511,12,Ministero del lavoro,Erariali,Addizionali Comunali,22536.71
+202112,10,Ministero della giustizia,Previdenziali,IRAP,15326.61
+202409,12,Ministero del lavoro,Previdenziali,IRAP,21057.29
+202407,55,Ministero della salute,Varie,IRAP,25577.33
+202101,12,Ministero della giustizia,Erariali,Addizionali Regionali,16672.73
+202105,12,Ministero del lavoro,Previdenziali,IRAP,30052.41
+202310,10,Ministero dell'interno,Previdenziali,Addizionali Regionali,15046.52
+202502,55,Ministero del lavoro,Varie,Addizionali Comunali,24950.97
+202306,99,Ministero della giustizia,Previdenziali,Addizionali Comunali,22123.78
+202201,99,Ministero dell'interno,Erariali,Addizionali Regionali,25970.48
+202205,10,Ministero del lavoro,Varie,IRPEF,14419.01
+202303,12,Ministero del lavoro,Varie,IRAP,31535.1
+202105,10,Ministero del lavoro,Erariali,IRAP,19106.12
+202208,10,Ministero del lavoro,Varie,IRAP,23383.24
+202204,10,Ministero del lavoro,Previdenziali,Addizionali Regionali,27222.44
+202011,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,16976.69
+202206,55,Ministero della salute,Erariali,IRAP,24128.63
+202107,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,16142.65
+202506,12,Ministero dell'interno,Erariali,IRAP,26984.81
+202408,55,Ministero dell'interno,Erariali,IRAP,16199.1
+202010,10,Ministero della salute,Previdenziali,Addizionali Regionali,20192.53
+202304,99,Ministero della giustizia,Erariali,IRPEF,21530.6
+202203,55,Ministero della salute,Previdenziali,Addizionali Regionali,23921.5
+202311,10,Ministero dell'interno,Varie,IRAP,29842.38
+202011,55,Ministero del lavoro,Varie,IRAP,17740.16
+202411,55,Ministero del lavoro,Erariali,IRPEF,25693.67
+202109,55,Ministero dell'interno,Previdenziali,Addizionali Comunali,29851.29
+202102,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,20828.67
+202409,55,Ministero dell'interno,Varie,IRAP,17249.34
+202008,55,Ministero del lavoro,Varie,Addizionali Comunali,11349.83
+202001,10,Ministero della salute,Previdenziali,IRAP,29416.38
+202011,,Ministero della giustizia,Erariali,IRPEF,1000000.0
+202109,12,Ministero della giustizia,Varie,IRPEF,14993.21
+202203,55,Ministero della salute,Erariali,IRAP,13208.35
+202105,12,Ministero della salute,Erariali,IRPEF,14983.93
+202312,10,Ministero dell'interno,Varie,Addizionali Regionali,24598.53
+202206,55,Ministero dell'interno,Erariali,Addizionali Regionali,25289.34
+202112,99,Ministero dell'interno,Erariali,IRPEF,23260.61
+202205,12,Ministero del lavoro,Previdenziali,IRAP,20661.69
+202311,55,Ministero dell'interno,Erariali,IRAP,13772.4
+202201,10,Ministero della salute,Previdenziali,IRPEF,16350.3
+202401,99,Ministero della giustizia,Varie,Addizionali Comunali,14466.9
+202109,12,Ministero del lavoro,Varie,Addizionali Regionali,22864.11
+202012,12,Ministero dell'interno,Previdenziali,Addizionali Comunali,14683.44
+202508,55,Ministero del lavoro,Varie,IRAP,16428.77
+202208,99,Ministero del lavoro,Erariali,IRAP,19082.56
+202401,99,Ministero dell'interno,Erariali,Addizionali Comunali,11651.0
+202406,99,Ministero del lavoro,Erariali,IRPEF,20233.86
+202508,99,Ministero della giustizia,Varie,Addizionali Comunali,19464.24
+202002,10,Ministero della salute,Erariali,Addizionali Comunali,25921.05
+202012,99,Ministero della salute,Varie,Addizionali Regionali,15900.67
+202210,12,Ministero della giustizia,Erariali,Addizionali Regionali,13504.02
+202010,12,Ministero del lavoro,Previdenziali,Addizionali Comunali,18129.7
+202107,10,Ministero dell'interno,Varie,Addizionali Comunali,14509.54
+202007,12,Ministero del lavoro,Varie,IRAP,20195.77
+202105,12,Ministero della giustizia,Erariali,Addizionali Regionali,10700.33
+202510,99,Ministero del lavoro,Varie,Addizionali Regionali,16973.27
+202505,12,Ministero della salute,Varie,IRAP,15358.14
+202003,10,Ministero del lavoro,Previdenziali,IRPEF,22838.79
+202111,99,Ministero della giustizia,Previdenziali,Addizionali Regionali,15947.18
+202402,55,Ministero della salute,Erariali,Addizionali Regionali,11319.52
+202504,99,Ministero del lavoro,Previdenziali,IRPEF,18990.9
+202202,10,Ministero del lavoro,Erariali,Addizionali Regionali,21599.43
+202210,99,Ministero della salute,Erariali,Addizionali Regionali,18643.97
+202008,99,Ministero dell'interno,Erariali,IRPEF,16943.39
+202212,10,Ministero della salute,Varie,IRPEF,16642.19
+202302,99,Ministero dell'interno,Previdenziali,Addizionali Comunali,20564.74
+202205,10,Ministero della giustizia,Erariali,IRAP,15552.76
+202208,10,Ministero della giustizia,Previdenziali,IRAP,18357.59
+202107,55,Ministero della salute,Erariali,IRPEF,23752.23
+202307,12,Ministero della salute,Previdenziali,IRPEF,13493.38
+202004,12,Ministero della giustizia,Previdenziali,Addizionali Regionali,19781.66
+202406,99,Ministero dell'interno,Erariali,Addizionali Comunali,11055.05
+202002,99,Ministero della giustizia,Varie,Addizionali Comunali,21139.65
+202010,55,Ministero della salute,Previdenziali,IRPEF,15105.95
+202302,55,Ministero della giustizia,Varie,Addizionali Regionali,25097.96
+202210,55,Ministero della salute,Varie,Addizionali Regionali,12615.26
+202111,10,Ministero della salute,Erariali,IRAP,22210.4
+202402,55,Ministero della giustizia,Erariali,IRAP,26105.66
+202211,55,Ministero dell'interno,Erariali,Addizionali Regionali,14846.55
+202504,99,Ministero del lavoro,Previdenziali,IRAP,15690.58
+abc,,Ministero della giustizia,Erariali,IRPEF,
+202405,10,Ministero del lavoro,Erariali,Addizionali Regionali,17570.69
+202309,10,Ministero della giustizia,Previdenziali,IRAP,22587.11
+202309,99,Ministero del lavoro,Previdenziali,Addizionali Comunali,17162.48
+202109,55,Ministero dell'interno,Erariali,Addizionali Regionali,14395.21
+202305,55,Ministero dell'interno,Erariali,Addizionali Regionali,9906.23
+202001,10,Ministero della giustizia,Erariali,Addizionali Comunali,28009.74
+202208,55,Ministero della salute,Erariali,IRPEF,28402.48
+202502,55,Ministero del lavoro,Varie,Addizionali Comunali,22801.19
+202302,55,Ministero della salute,Varie,Addizionali Regionali,15948.08
+202505,12,Ministero della salute,Erariali,IRPEF,23738.51
+202001,99,Ministero della salute,Varie,IRAP,24743.53
+202409,12,Ministero dell'interno,Previdenziali,IRAP,18728.76
+202009,99,Ministero della giustizia,Varie,IRAP,20206.84
+202312,10,Ministero della giustizia,Varie,Addizionali Regionali,26158.84
+202210,55,Ministero dell'interno,Erariali,Addizionali Comunali,11797.69
+202405,99,Ministero dell'interno,Varie,IRPEF,24992.11
+202212,12,Ministero della giustizia,Varie,IRAP,18454.23
+202507,55,Ministero della salute,Varie,IRPEF,14437.11
+202508,10,Ministero del lavoro,Varie,Addizionali Regionali,14848.47
+202202,99,Ministero del lavoro,Previdenziali,IRAP,15676.39
+202007,99,Ministero del lavoro,Erariali,Addizionali Regionali,13949.65
+202304,99,Ministero della salute,Erariali,Addizionali Comunali,28856.94
+202208,55,Ministero della giustizia,Previdenziali,Addizionali Regionali,22456.01
+202306,12,Ministero dell'interno,Varie,Addizionali Regionali,25322.41
+202403,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,22811.84
+202410,99,Ministero della salute,Varie,IRPEF,20306.14
+202202,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,20373.78
+202010,10,Ministero della salute,Erariali,Addizionali Comunali,18012.44
+202001,12,Ministero del lavoro,Erariali,Addizionali Regionali,18421.09
+202103,10,Ministero del lavoro,Erariali,IRPEF,12959.48
+202505,12,Ministero della salute,Varie,IRAP,25409.13
+202406,99,Ministero dell'interno,Varie,Addizionali Comunali,10933.83
+202009,12,Ministero dell'interno,Previdenziali,IRPEF,14706.95
+202204,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,30060.17
+202101,99,Ministero del lavoro,Erariali,Addizionali Comunali,20680.86
+202411,10,Ministero della giustizia,Varie,Addizionali Comunali,20888.55
+202103,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,23186.69
+202102,12,Ministero della salute,Varie,Addizionali Regionali,12298.31
+202501,99,Ministero della salute,Varie,IRPEF,13031.03
+202203,10,Ministero della giustizia,Erariali,IRPEF,17775.53
+202508,12,Ministero del lavoro,Erariali,IRPEF,15483.2
+202409,99,Ministero della salute,Varie,Addizionali Comunali,19625.22
+202004,12,Ministero della giustizia,Varie,Addizionali Regionali,22427.75
+202505,55,Ministero della giustizia,Varie,Addizionali Comunali,26945.82
+202111,99,Ministero della giustizia,Varie,Addizionali Comunali,24055.44
+202008,10,Ministero della giustizia,Erariali,IRPEF,15028.62
+202211,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,18125.18
+202309,10,Ministero della giustizia,Erariali,IRAP,16765.27
+202209,10,Ministero della salute,Previdenziali,Addizionali Comunali,14917.2
+202112,,Ministero del lavoro,Varie,IRAP,
+202109,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,28321.56
+202005,10,Ministero dell'interno,Erariali,Addizionali Regionali,20053.21
+202211,10,Ministero della salute,Erariali,Addizionali Regionali,18878.85
+202108,10,Ministero della salute,Varie,IRPEF,22421.29
+202306,12,Ministero della giustizia,Erariali,Addizionali Comunali,22668.73
+202205,10,Ministero della salute,Varie,IRAP,25594.13
+202102,10,Ministero della giustizia,Erariali,IRAP,16281.69
+202505,55,Ministero del lavoro,Erariali,Addizionali Comunali,22013.61
+202312,55,Ministero del lavoro,Varie,IRAP,15444.13
+202401,10,Ministero della salute,Previdenziali,Addizionali Regionali,19049.21
+202108,99,Ministero della salute,Erariali,IRAP,20283.71
+202403,10,Ministero dell'interno,Previdenziali,IRPEF,20772.42
+202103,55,Ministero della salute,Erariali,Addizionali Regionali,20551.61
+202108,99,Ministero dell'interno,Erariali,Addizionali Regionali,24009.15
+202201,99,Ministero del lavoro,Erariali,Addizionali Regionali,17015.06
+202508,10,Ministero del lavoro,Erariali,Addizionali Comunali,20908.37
+202208,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,16205.48
+202301,55,Ministero del lavoro,Previdenziali,Addizionali Regionali,34603.76
+202211,99,Ministero dell'interno,Erariali,Addizionali Comunali,15435.68
+202011,10,Ministero della salute,Erariali,IRAP,16496.74
+202409,12,Ministero della giustizia,Previdenziali,Addizionali Comunali,24413.24
+202410,12,Ministero dell'interno,Varie,Addizionali Comunali,17852.67
+202311,55,Ministero della salute,Varie,Addizionali Regionali,24415.23
+202512,12,Ministero della giustizia,Previdenziali,IRPEF,20765.11
+202411,55,Ministero del lavoro,Erariali,IRPEF,17984.05
+202410,55,Ministero dell'interno,Erariali,IRPEF,16236.22
+202003,55,Ministero della salute,Varie,IRAP,16055.82
+202110,12,Ministero della giustizia,Varie,Addizionali Comunali,18038.39
+202205,55,Ministero della giustizia,Previdenziali,IRPEF,19128.02
+202507,99,Ministero del lavoro,Varie,Addizionali Regionali,15840.59
+202104,10,Ministero della salute,Previdenziali,IRPEF,19453.84
+202112,10,Ministero del lavoro,Varie,IRPEF,14529.42
+202111,55,Ministero del lavoro,Varie,Addizionali Comunali,23779.51
+202009,10,Ministero della salute,Varie,Addizionali Comunali,24736.81
+202008,12,Ministero della salute,Erariali,Addizionali Comunali,16478.37
+202112,12,Ministero della salute,Erariali,IRAP,16199.13
+202403,10,Ministero dell'interno,Erariali,IRAP,20889.58
+202503,12,Ministero della salute,Varie,IRPEF,26326.83
+202507,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,27433.32
+202109,10,Ministero del lavoro,Previdenziali,IRPEF,12986.29
+202112,10,Ministero dell'interno,Previdenziali,Addizionali Regionali,25031.52
+202305,55,Ministero della salute,Previdenziali,Addizionali Regionali,19692.23
+202406,10,Ministero dell'interno,Erariali,Addizionali Comunali,19789.05
+202304,55,Ministero della salute,Erariali,Addizionali Comunali,22523.56
+202302,10,Ministero dell'interno,Varie,Addizionali Regionali,17595.21
+202311,10,Ministero del lavoro,Varie,Addizionali Comunali,25483.5
+202012,10,Ministero del lavoro,Previdenziali,IRAP,27119.81
+202501,12,Ministero della giustizia,Erariali,IRAP,27306.42
+202106,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,10780.43
+202006,,Ministero della salute,Varie,Addizionali Regionali,
+202108,10,Ministero del lavoro,Varie,IRPEF,10323.85
+202202,10,Ministero dell'interno,Previdenziali,Addizionali Comunali,16173.6
+202112,12,Ministero dell'interno,Varie,Addizionali Comunali,8012.51
+202311,12,Ministero dell'interno,Previdenziali,IRPEF,22251.33
+202204,12,Ministero della giustizia,Erariali,Addizionali Comunali,21096.55
+202412,55,Ministero dell'interno,Previdenziali,IRPEF,17836.99
+202411,55,Ministero della giustizia,Erariali,Addizionali Regionali,16044.26
+202006,55,Ministero della giustizia,Erariali,IRAP,21570.16
+202211,10,Ministero della salute,Varie,Addizionali Regionali,14942.89
+202107,55,Ministero dell'interno,Varie,IRAP,14602.69
+202102,99,Ministero dell'interno,Varie,IRPEF,13987.92
+202502,99,Ministero del lavoro,Previdenziali,IRAP,18980.8
+202404,12,Ministero della salute,Previdenziali,Addizionali Regionali,17088.46
+202003,55,Ministero del lavoro,Varie,IRAP,18078.81
+202409,99,Ministero della salute,Previdenziali,IRPEF,22609.04
+202411,12,Ministero dell'interno,Varie,IRAP,24816.48
+202302,55,Ministero della giustizia,Previdenziali,Addizionali Comunali,27252.4
+202504,10,Ministero della giustizia,Erariali,Addizionali Regionali,20300.68
+202511,99,Ministero della giustizia,Erariali,Addizionali Comunali,21737.95
+202203,10,Ministero della giustizia,Varie,IRPEF,20944.23
+202012,55,Ministero della giustizia,Previdenziali,IRAP,11629.07
+202305,99,Ministero del lavoro,Previdenziali,Addizionali Comunali,18151.51
+202411,55,Ministero della salute,Erariali,Addizionali Comunali,18174.51
+202306,10,Ministero dell'interno,Erariali,IRAP,17445.94
+202209,99,Ministero del lavoro,Varie,IRAP,19795.3
+202403,10,Ministero della salute,Erariali,Addizionali Regionali,18902.6
+202201,55,Ministero della giustizia,Varie,Addizionali Comunali,15068.37
+202112,55,Ministero della salute,Erariali,Addizionali Comunali,19244.87
+202502,10,Ministero della salute,Erariali,IRPEF,16804.75
+202403,99,Ministero della giustizia,Previdenziali,Addizionali Regionali,6903.79
+202009,10,Ministero della giustizia,Erariali,IRPEF,13014.66
+202302,55,Ministero della giustizia,Erariali,Addizionali Comunali,20444.57
+202311,10,Ministero dell'interno,Varie,IRPEF,25459.46
+202309,55,Ministero della giustizia,Erariali,Addizionali Comunali,7863.98
+202005,10,Ministero dell'interno,Varie,Addizionali Comunali,15648.04
+202202,99,Ministero della giustizia,Erariali,IRPEF,22157.27
+202307,99,Ministero dell'interno,Erariali,IRPEF,24390.98
+202212,10,Ministero della salute,Varie,IRAP,17899.43
+202408,10,Ministero del lavoro,Previdenziali,IRAP,16586.09
+202310,99,Ministero della salute,Varie,IRAP,26098.55
+202204,55,Ministero della salute,Varie,Addizionali Comunali,23980.46
+202509,99,Ministero della giustizia,Varie,IRPEF,24293.09
+202507,55,Ministero dell'interno,Previdenziali,Addizionali Regionali,17659.68
+202012,10,Ministero del lavoro,Erariali,Addizionali Comunali,25568.47
+202304,10,Ministero della giustizia,Varie,Addizionali Regionali,10274.66
+202006,55,Ministero della giustizia,Varie,IRPEF,25656.15
+202012,10,Ministero della giustizia,Previdenziali,Addizionali Comunali,19667.34
+202506,55,Ministero della salute,Varie,Addizionali Regionali,20644.67
+202405,12,Ministero dell'interno,Erariali,Addizionali Regionali,15273.74
+202108,,Ministero dell'interno,Previdenziali,IRAP,
+202201,12,Ministero del lavoro,Erariali,IRAP,20538.52
+202402,55,Ministero dell'interno,Erariali,IRAP,22756.97
+202502,99,Ministero dell'interno,Previdenziali,Addizionali Comunali,23513.46
+202506,55,Ministero della giustizia,Varie,IRPEF,22973.89
+202209,99,Ministero della giustizia,Erariali,IRPEF,21840.81
+202012,99,Ministero della salute,Erariali,IRAP,15381.07
+202509,99,Ministero della giustizia,Erariali,IRAP,23837.38
+202206,99,Ministero della giustizia,Erariali,IRAP,14821.89
+202208,55,Ministero della giustizia,Previdenziali,Addizionali Regionali,25535.32
+202001,99,Ministero della giustizia,Previdenziali,IRAP,19580.09
+202309,99,Ministero della salute,Erariali,Addizionali Regionali,19746.45
+202506,12,Ministero della giustizia,Varie,IRPEF,24329.63
+202512,10,Ministero del lavoro,Erariali,Addizionali Comunali,25007.34
+202301,10,Ministero del lavoro,Varie,Addizionali Comunali,23853.19
+202108,12,Ministero del lavoro,Erariali,Addizionali Comunali,15897.71
+202112,12,Ministero del lavoro,Varie,Addizionali Comunali,23813.35
+202002,55,Ministero della giustizia,Erariali,Addizionali Regionali,15926.05
+202001,55,Ministero del lavoro,Varie,Addizionali Regionali,23939.51
+202001,55,Ministero della giustizia,Erariali,IRAP,12874.18
+202404,12,Ministero della salute,Erariali,Addizionali Regionali,19531.6
+202106,12,Ministero del lavoro,Varie,IRAP,15895.54
+202106,99,Ministero dell'interno,Previdenziali,IRAP,24349.68
+202110,55,Ministero del lavoro,Varie,Addizionali Comunali,25575.83
+202102,55,Ministero del lavoro,Previdenziali,Addizionali Regionali,20994.98
+202107,55,Ministero della giustizia,Erariali,Addizionali Regionali,20830.55
+202301,10,Ministero del lavoro,Varie,IRAP,23520.89
+202203,99,Ministero dell'interno,Varie,IRAP,25605.57
+202206,55,Ministero della giustizia,Varie,IRPEF,20186.56
+202006,55,Ministero della giustizia,Previdenziali,IRPEF,17501.62
+202007,55,Ministero della salute,Previdenziali,IRAP,23236.34
+202002,10,Ministero della salute,Erariali,IRPEF,10706.36
+202308,10,Ministero del lavoro,Previdenziali,IRPEF,24548.26
+202112,12,Ministero della salute,Previdenziali,IRAP,16449.07
+202504,99,Ministero della salute,Erariali,IRAP,18798.86
+202511,12,Ministero della salute,Varie,Addizionali Regionali,24580.26
+202204,99,Ministero della giustizia,Varie,IRAP,17922.45
+202306,10,Ministero della giustizia,Erariali,IRAP,23237.04
+202106,55,Ministero della giustizia,Varie,Addizionali Comunali,25694.54
+202103,12,Ministero della salute,Previdenziali,Addizionali Regionali,20550.17
+202012,55,Ministero della giustizia,Erariali,Addizionali Regionali,21557.24
+202111,12,Ministero della salute,Erariali,Addizionali Regionali,19402.82
+202106,10,Ministero della giustizia,Erariali,Addizionali Comunali,20577.99
+202307,10,Ministero della giustizia,Varie,IRAP,14417.98
+202309,10,Ministero dell'interno,Erariali,Addizionali Regionali,18531.31
+202403,12,Ministero del lavoro,Erariali,Addizionali Regionali,13558.97
+202103,99,Ministero della salute,Erariali,IRPEF,15506.16
+202504,12,Ministero dell'interno,Varie,Addizionali Regionali,9985.25
+202408,99,Ministero della giustizia,Previdenziali,IRAP,21319.64
+202407,12,Ministero della salute,Erariali,IRAP,28458.01
+abc,,Ministero dell'interno,Erariali,Addizionali Regionali,1000000.0
+202405,99,Ministero della giustizia,Varie,Addizionali Regionali,23692.45
+202103,55,Ministero della salute,Previdenziali,IRAP,24050.4
+202211,99,Ministero della salute,Varie,Addizionali Comunali,14610.63
+202404,55,Ministero del lavoro,Previdenziali,Addizionali Comunali,20208.61
