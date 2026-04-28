@@ -92,15 +92,15 @@ The results confirm that the system correctly assigns higher reliability scores 
 
 ### Missing values per column
 
-![Missing values Dataset 1](images/missing_values_dataset1.png)
-![Missing values Dataset 2](images/missing_values_dataset2.png)
+![Missing values Dataset 1](images/dataset1_missing.png)
+![Missing values Dataset 2](images/dataset2_missing.png)
 ![Missing values Dataset 3 (Spesa)](images/missing_values_spesa.png)
 ![Missing values Dataset 4 (Attivazioni)](images/missing_values_attivazioni.png)
 
 ### Reliability score breakdown per agent
 
-![Reliability Dataset 1](images/reliability_dataset1.png)
-![Reliability Dataset 2](images/reliability_dataset2.png)
+![Reliability Dataset 1](images/dataset1_scores.png)
+![Reliability Dataset 2](images/dataset2_scores.png)
 ![Reliability Dataset 3 (Spesa)](images/reliability_spesa.png)
 ![Reliability Dataset 4 (Attivazioni)](images/reliability_attivazioni.png)
 
