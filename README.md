@@ -117,3 +117,19 @@ This project successfully built a modular multi-agent data quality system entire
 The key takeaway is that a multi-agent architecture is well-suited for data quality tasks because each type of check (schema, completeness, consistency, anomaly) is independent and can be developed, tested, and improved in isolation without affecting the others. The modular design also makes it straightforward to add new agents in the future.
 
 Several limitations remain. The statistical checks are relatively simple — Z-scores assume normally distributed data, which may not hold for government spending figures. The cross-column validation rules are currently limited to the `Rata` column format and could be extended to cover more domain-specific logic. The categorical anomaly detection flags a very large number of rare values in real datasets, which may include false positives. Future work could include a Streamlit graphical interface for interactive exploration of the quality report, more sophisticated anomaly detection methods such as Isolation Forest, deeper LLM integration for automatic schema inference, and support for non-CSV formats such as JSON and relational databases.
+
+## Streamlit Demo
+
+To run the interactive app:
+
+1. Clone the repository
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run the app:
+   python -m streamlit run app.py
+
+4. Open the browser at:
+   http://localhost:8501
+
+Upload any CSV file to analyze data quality.
