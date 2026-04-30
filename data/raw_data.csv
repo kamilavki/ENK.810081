@@ -1,5 +1,0 @@
-customer_id,name,birth_date,email,salary,is_active
-1,Mario Rossi,1999-05-10,mario@email.com,2500.50,True
-2,Giulia Bianchi,2001-11-25,giulia@email.com,3100.00,False
-3,Luca Verdi,not_a_date,luca@email.com,2200.00,yes
-4,Anna Neri,1998-07-14,anna@email.com,not_numeric,True
