@@ -30,7 +30,7 @@ $$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {c
 If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality. A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
 
 An optional LLM integration (local Ollama with `llama3` or Groq API with `llama-3.1-8b-instant`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
-li
+
 The pipeline follows a **Supervisor Architecture**: the `run_pipeline` manager function calls each agent in sequence and passes all results to the Remediation Agent.
 
 ![Reliability comparison across all datasets](images/reliability_comparison.png)
@@ -43,7 +43,7 @@ To reproduce this project, install the required libraries with:
 pip install -r requirements.txt
 ```
 
-No GPU or special hardware is required. Tested with Python 3.14.2 on macOS. The optional LLM integration requires either [Ollama](https://ollama.com) running locally with a `llama3` model, or a `GROQ_API_KEY` environment variable set with access to `mixtral-8x7b-32768`.
+No GPU or special hardware is required. Tested with Python 3.14.2 on macOS. The optional LLM integration requires either [Ollama](https://ollama.com) running locally with a `llama3` model, or a `GROQ_API_KEY` environment variable set with access to `llama-3.1-8b-instant`.
 
 The real NoiPA datasets (spesa.csv and attivazioniCessazioni.csv) must be placed inside the "datasets/" folder before running the notebook. These files are already included in the GitHub repository, with cloned repository, no action is needed.
 
