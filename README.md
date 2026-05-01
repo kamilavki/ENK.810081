@@ -30,7 +30,7 @@ $$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {c
 If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality. A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
 
 An optional LLM integration (local Ollama with `llama3` or Groq API with `llama-3.1-8b-instant`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
-
+li
 The pipeline follows a **Supervisor Architecture**: the `run_pipeline` manager function calls each agent in sequence and passes all results to the Remediation Agent.
 
 ![Reliability comparison across all datasets](images/reliability_comparison.png)
@@ -117,7 +117,7 @@ This project successfully built a modular multi-agent data quality system entire
 
 The key takeaway is that a multi-agent architecture is well-suited for data quality tasks because each type of check (schema, completeness, consistency, anomaly) is independent and can be developed, tested, and improved in isolation without affecting the others. The modular design also makes it straightforward to add new agents in the future.
 
-Several limitations remain. The statistical checks are relatively simple: Z-scores assume normally distributed data, which may not hold for government spending figures. The cross-column validation rules are currently limited to the Rata column format and could be extended to cover more domain-specific logic. The categorical anomaly detection flags a very large number of rare values in real datasets, which may include false positives. Future work could include a Streamlit graphical interface for interactive exploration of the quality report, more sophisticated anomaly detection methods such as Isolation Forest, deeper LLM integration for automatic schema inference, and support for non-CSV formats such as JSON and relational databases.
+Several limitations remain. The statistical checks are relatively simple: Z-scores assume normally distributed data, which may not hold for government spending figures. The cross-column validation rules are currently limited to the Rata column format and could be extended to cover more domain-specific logic. The categorical anomaly detection flags a very large number of rare values in real datasets, which may include false positives. Future work could include a more sophisticated anomaly detection methods such as Isolation Forest, deeper LLM integration for automatic schema inference, and support for non-CSV formats such as JSON and relational databases.
 
 ## Streamlit Demo
 
