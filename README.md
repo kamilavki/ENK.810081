@@ -90,21 +90,23 @@ We ran the pipeline on several datasets to validate the system across different 
 
 
 
-The results confirm that the system correctly assigns higher reliability scores to cleaner datasets and lower scores to messier ones. On the real NoiPA datasets, the agents detected thousands of genuine issues: 17,162 missing values and 216 numerical outliers in the Spesa dataset, and 47,503 missing values and 201 outliers in the Attivazioni dataset.
+The results confirm that the system correctly assigns higher reliability scores to cleaner datasets and lower scores to messier ones. On the real NoiPA datasets, the agents detected thousands of genuine issues: 17.162 missing values and 803 numerical outliers in the spesa dataset, and 47.503 missing values and 843 outliers in the attivazioni dataset.
 
 ### Missing values per column
 
 ![Missing values Dataset 1](images/dataset1_missing.png)
 ![Missing values Dataset 2](images/dataset2_missing.png)
-![Missing values Dataset 3 (Spesa)](images/missing_values_spesa.png)
-![Missing values Dataset 4 (Attivazioni)](images/missing_values_attivazioni.png)
+![Missing values Dataset 3](images/dataset3_missing.png)
+![Missing values Dataset 4 (Spesa)](images/missing_values_spesa.png)
+![Missing values Dataset 5 (Attivazioni)](images/missing_values_attivazioni.png)
 
 ### Reliability score breakdown per agent
 
 ![Reliability Dataset 1](images/dataset1_scores.png)
 ![Reliability Dataset 2](images/dataset2_scores.png)
-![Reliability Dataset 3 (Spesa)](images/reliability_spesa.png)
-![Reliability Dataset 4 (Attivazioni)](images/reliability_attivazioni.png)
+![Reliability Dataset 3](images/dataset3_scores.png)
+![Reliability Dataset 4 (Spesa)](images/reliability_spesa.png)
+![Reliability Dataset 5 (Attivazioni)](images/reliability_attivazioni.png)
 
 ### Overall comparison
 
