@@ -96,7 +96,7 @@ The results confirm that the system correctly assigns higher reliability scores 
 
 ![Missing values Dataset 1](images/dataset1_missing.png)
 ![Missing values Dataset 2](images/dataset2_missing.png)
-![Missing values Dataset 3](images/dataset3missing.png)
+![Missing values Dataset 3](images/dataset3_missing.png)
 ![Missing values Dataset 4 (Spesa)](images/missing_values_spesa.png)
 ![Missing values Dataset 5 (Attivazioni)](images/missing_values_attivazioni.png)
 
