@@ -136,3 +136,25 @@ To run the interactive app:
    http://localhost:8501
 
 Upload any CSV file to analyze data quality.
+
+## AI Tool Usage
+
+As required by the academic integrity guidelines, we declare that AI tools (Claude by Anthropic) were used during this project. All code has been reviewed, tested, and modified by the team.
+
+The following prompts were used:
+
+1. "We're building a data quality system for a uni project and we were thinking of using a multi-agent architecture where each agent handles one type of check (schema, completeness, consistency, anomaly). Is this a reasonable design or would it be better to just have one big function that does everything? What are the actual tradeoffs?"
+
+2. "What's a good way to structure a Python pipeline where multiple independent analysis functions all need to run on the same dataset and then pass their results to a final aggregation step? We're thinking of using a dict to collect outputs but not sure if there's a cleaner pattern."
+
+3. "For detecting outliers in a dataset, when would you use Z-score vs something like IQR or median absolute deviation? We went with Z-score for simplicity but wondering if there's a reason to prefer something else for skewed data like government spending figures."
+
+4. "What's the cleanest way to handle a function that optionally calls an external API (in our case a local LLM) but should still work perfectly if the API is unavailable? We want the pipeline to never crash just because Ollama isn't running."
+
+5. "We want to build a Streamlit interface on top of our existing Python pipeline. The pipeline takes a CSV path and returns a dict with all the results. What's the cleanest way to wire Streamlit to it — should we just call the function directly from the app or is there a better pattern for keeping the logic separate from the UI?"
+
+6. "In Streamlit, what's the best way to handle a file that the user uploads? We need to pass it to functions that expect a file path, but st.file_uploader gives us a buffer not a path. Is using tempfile.NamedTemporaryFile the right approach here?"
+
+7. "In our anomaly agent we're trying to detect outliers in columns that might be numeric but were read as strings by pandas. We're using pd.to_numeric(series, errors='coerce') to convert first. Is this the right way to handle mixed-type columns, and are there edge cases we should watch out for?"
+
+8. "For the cross-column consistency check, we're iterating over all pairs of columns and checking if a low-cardinality column maps mostly 1-to-1 to another. The logic works but it's O(n²) in the number of columns which gets slow on wide datasets. Is there a smarter way to do this or is O(n²) just unavoidable for this kind of check?"
