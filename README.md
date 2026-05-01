@@ -85,8 +85,8 @@ We ran the pipeline on several datasets to validate the system across different 
 | Dataset 1 (synthetic, clean) | 95 | 93.33 | 99.5 | 100 | 96.85 |
 | Dataset 2 (synthetic, messy) | 90 | 58.33 | 100 | 100 | 85.50|
 | Dataset 3 (synthetic, large) | 90 | 99.39 | 97.5 | 100 | 97.07|
-| Dataset 4 (real, Spesa) | 45 | 87.36 | 75 | 40 | 65.71 |
-| Dataset 5 (real, Attivazioni) | 25 | 87.56 | 65| 40 | 58.77 |
+| Dataset 4 (real, Spesa) | 45 | 87.36 | 75 | 100 | 77.71 |
+| Dataset 5 (real, Attivazioni) | 25 | 87.56 | 65| 100 | 70.77 |
 
 
 
