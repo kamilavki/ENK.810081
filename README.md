@@ -151,7 +151,7 @@ The following prompts were used:
 
 4. "What's the cleanest way to handle a function that optionally calls an external API (in our case a local LLM) but should still work perfectly if the API is unavailable? We want the pipeline to never crash just because Ollama isn't running."
 
-5. "We want to build a Streamlit interface on top of our existing Python pipeline. The pipeline takes a CSV path and returns a dict with all the results. What's the cleanest way to wire Streamlit to it — should we just call the function directly from the app or is there a better pattern for keeping the logic separate from the UI?"
+5. "We want to build a Streamlit interface on top of our existing Python pipeline. The pipeline takes a CSV path and returns a dict with all the results. What's the cleanest way to wire Streamlit to it - should we just call the function directly from the app or is there a better pattern for keeping the logic separate from the UI?"
 
 6. "In Streamlit, what's the best way to handle a file that the user uploads? We need to pass it to functions that expect a file path, but st.file_uploader gives us a buffer not a path. Is using tempfile.NamedTemporaryFile the right approach here?"
 
