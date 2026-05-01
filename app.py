@@ -1,4 +1,3 @@
-
 import json
 import re
 import tempfile
@@ -8,21 +7,12 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-
-# =========================
-# Page configuration
-# =========================
-
 st.set_page_config(
     page_title="AI Agents for Data Quality",
     page_icon="🧪",
     layout="wide"
 )
 
-
-# =========================
-# Utilities
-# =========================
 
 def load_dataset(csv_path):
     df = pd.read_csv(csv_path)
@@ -71,7 +61,7 @@ def detect_data_type_issues(df):
             type_info[col] = "numeric"
             if numeric_count < total_non_missing:
                 bad = series[~numeric_mask & series.notna()].unique()[:5]
-                issues.append(f"'{col}' is mostly numeric but has non-numeric values: {list(bad)}")
+                issues.append(f"'{col}' looks numeric but has non-numeric values: {list(bad)}")
         else:
             type_info[col] = "string"
             if numeric_count > 0:
@@ -81,10 +71,6 @@ def detect_data_type_issues(df):
     return issues, type_info
 
 
-# =========================
-# Agents
-# =========================
-
 def schema_agent(csv_path):
     meta = load_dataset(csv_path)
     df = meta["df"]
@@ -93,8 +79,8 @@ def schema_agent(csv_path):
     naming_issues = check_naming_conventions(columns)
     dtype_issues, inferred_types = detect_data_type_issues(df)
 
-    total_issues = len(naming_issues) + len(dtype_issues)
-    score = max(100 - 5 * total_issues, 0)
+    n_issues = len(naming_issues) + len(dtype_issues)
+    score = max(100 - 5 * n_issues, 0)
 
     return {
         "naming_issues": naming_issues,
@@ -108,38 +94,35 @@ def completeness_agent(csv_path):
     meta = load_dataset(csv_path)
     df = meta["df"].copy()
 
+    # replace common placeholder strings with actual NaN so they count as missing
     placeholders = ["", " ", "NA", "N/A", "na", "n/a", "unknown", "Unknown", "-", "--", "null", "NULL", "None"]
-
-    df_normalized = df.replace(placeholders, np.nan)
+    df = df.replace(placeholders, np.nan)
 
     per_column = {}
-    total_cells = df_normalized.shape[0] * df_normalized.shape[1]
-    total_missing = int(df_normalized.isna().sum().sum())
+    total_cells = df.shape[0] * df.shape[1]
+    total_missing = int(df.isna().sum().sum())
 
-    for col in df_normalized.columns:
-        missing_count = int(df_normalized[col].isna().sum())
-        completeness_pct = round(100 * (1 - missing_count / len(df_normalized)), 2) if len(df_normalized) else 100
+    for col in df.columns:
+        n_missing = int(df[col].isna().sum())
+        pct = round(100 * (1 - n_missing / len(df)), 2) if len(df) else 100
         per_column[col] = {
-            "missing_count": missing_count,
-            "completeness_pct": completeness_pct
+            "missing_count": n_missing,
+            "completeness_pct": pct
         }
 
-    row_missing_counts = df_normalized.isna().sum(axis=1)
-    rows_with_missing = row_missing_counts[row_missing_counts > 0].to_dict()
+    row_missing = df.isna().sum(axis=1)
+    rows_with_missing = row_missing[row_missing > 0].to_dict()
 
-    sparse_columns = [
-        col for col, stats in per_column.items()
-        if stats["completeness_pct"] < 50
-    ]
+    sparse_cols = [col for col, s in per_column.items() if s["completeness_pct"] < 50]
 
-    overall_completeness = round(100 * (1 - total_missing / total_cells), 2) if total_cells else 100
+    overall = round(100 * (1 - total_missing / total_cells), 2) if total_cells else 100
 
     return {
         "per_column_completeness": per_column,
         "total_missing_values": total_missing,
         "rows_with_missing": rows_with_missing,
-        "sparse_columns": sparse_columns,
-        "completeness_score": overall_completeness
+        "sparse_columns": sparse_cols,
+        "completeness_score": overall
     }
 
 
@@ -147,83 +130,70 @@ def consistency_agent(csv_path):
     meta = load_dataset(csv_path)
     df = meta["df"]
 
-    duplicate_mask = df.duplicated(keep="first")
-    duplicate_indices = df.index[duplicate_mask].tolist()
-    duplicate_rows = int(duplicate_mask.sum())
+    dup_mask = df.duplicated(keep="first")
+    dup_indices = df.index[dup_mask].tolist()
+    n_dups = int(dup_mask.sum())
 
     format_issues = []
     for col in df.select_dtypes(include=["object"]).columns:
-        unique_original = set(df[col].dropna().astype(str).unique())
+        unique_vals = set(df[col].dropna().astype(str).unique())
         unique_lower = set(df[col].dropna().astype(str).str.lower().unique())
+        if len(unique_lower) < len(unique_vals):
+            format_issues.append(f"'{col}' has inconsistent casing: {list(unique_vals)[:5]}")
 
-        if len(unique_lower) < len(unique_original):
-            format_issues.append(f"'{col}' has inconsistent casing: {list(unique_original)[:5]}")
+    cross_col_issues = []
 
-    cross_column_issues = []
-
-    # Specific format consistency check for NoiPA-style period column.
+    # check Rata column is YYYYMM format if it exists
     if "Rata" in df.columns:
-        for idx, value in df["Rata"].dropna().items():
-            value_str = str(int(value)) if isinstance(value, (int, float, np.integer, np.floating)) else str(value)
-            if not (value_str.isdigit() and len(value_str) == 6):
-                cross_column_issues.append(f"row {idx}: Rata='{value}' not in YYYYMM format")
+        for idx, val in df["Rata"].dropna().items():
+            val_str = str(int(val)) if isinstance(val, (int, float, np.integer, np.floating)) else str(val)
+            if not (val_str.isdigit() and len(val_str) == 6):
+                cross_col_issues.append(f"row {idx}: Rata='{val}' not in YYYYMM format")
 
-    # Generic cross-column consistency check.
-    checked_pairs = set()
-    max_cross_column_issues = 50
+    checked = set()
+    max_issues = 50
 
     for col1 in df.columns:
         for col2 in df.columns:
-            if col1 == col2:
+            if col1 == col2 or (col2, col1) in checked:
                 continue
+            checked.add((col1, col2))
 
-            if (col2, col1) in checked_pairs:
-                continue
-            checked_pairs.add((col1, col2))
-
-            s1 = df[col1].dropna()
-
-            # col1 must be low-cardinality to behave like a key/category.
-            if s1.nunique() > 20:
+            if df[col1].dropna().nunique() > 20:
                 continue
 
             pairs = df[[col1, col2]].dropna()
-
             if len(pairs) < 5:
                 continue
 
             mapping = pairs.groupby(col1)[col2].nunique()
-            mostly_one_to_one = (mapping == 1).mean() >= 0.80
-            inconsistent_keys = mapping[mapping > 1]
+            bad_keys = mapping[mapping > 1]
 
-            if mostly_one_to_one and len(inconsistent_keys) > 0:
-                for key in inconsistent_keys.index:
-                    if len(cross_column_issues) >= max_cross_column_issues:
+            if (mapping == 1).mean() >= 0.80 and len(bad_keys) > 0:
+                for key in bad_keys.index:
+                    if len(cross_col_issues) >= max_issues:
                         break
-
                     vals = pairs[pairs[col1] == key][col2].unique()
-                    cross_column_issues.append(
+                    cross_col_issues.append(
                         f"'{col1}'='{key}' maps to {len(vals)} different '{col2}' values: {list(vals[:3])}"
                     )
 
-            if len(cross_column_issues) >= max_cross_column_issues:
+            if len(cross_col_issues) >= max_issues:
                 break
 
-        if len(cross_column_issues) >= max_cross_column_issues:
+        if len(cross_col_issues) >= max_issues:
             break
 
-    duplicate_penalty = min(30, duplicate_rows * 0.5)
-    format_penalty = min(30, len(format_issues) * 5)
-    cross_column_penalty = min(40, len(cross_column_issues) * 2)
-
-    total_penalty = duplicate_penalty + format_penalty + cross_column_penalty
-    score = round(max(100 - total_penalty, 0), 2)
+    dup_pen = min(30, n_dups * 0.5)
+    fmt_pen = min(30, len(format_issues) * 5)
+    cross_pen = min(40, len(cross_col_issues) * 2)
+    score = round(max(100 - dup_pen - fmt_pen - cross_pen, 0), 2)
 
     return {
-        "duplicate_rows": duplicate_rows,
-        "duplicate_indices": duplicate_indices[:100],
+        "duplicate_rows": n_dups,
+        "duplicate_indices": dup_indices[:100],
         "format_issues": format_issues,
-        "cross_column_issues": cross_column_issues,
+        "cross_column_issues": cross_col_issues,
         "consistency_score": score
     }
 
@@ -232,111 +202,86 @@ def anomaly_agent(csv_path):
     meta = load_dataset(csv_path)
     df = meta["df"]
 
-    numerical_outliers = {}
-    categorical_anomalies = []
+    num_outliers = {}
+    cat_anomalies = []
     total_outliers = 0
 
-    id_like_keywords = ["id", "_id", "codice", "code", "cf", "tax", "uuid"]
+    id_keywords = ["id", "_id", "codice", "code", "cf", "tax", "uuid"]
 
-    def is_identifier_column(col, series):
-        col_lower = str(col).lower()
-
-        if any(key in col_lower for key in id_like_keywords):
+    def is_id_col(col, series):
+        if any(k in str(col).lower() for k in id_keywords):
             return True
-
         non_null = series.dropna()
-
-        if len(non_null) == 0:
-            return False
-
-        # In tiny datasets, almost every column looks unique.
-        # Only use uniqueness ratio as an ID signal for larger columns.
         if len(non_null) < 20:
             return False
+        return non_null.nunique() / len(non_null) > 0.80
 
-        uniqueness_ratio = non_null.nunique() / len(non_null)
-        return uniqueness_ratio > 0.80
-
-    # Numerical outlier detection.
     for col in df.columns:
-        if is_identifier_column(col, df[col]):
+        if is_id_col(col, df[col]):
             continue
 
-        numeric_series = pd.to_numeric(df[col], errors="coerce").dropna()
-
-        if len(numeric_series) < 2:
+        num_series = pd.to_numeric(df[col], errors="coerce").dropna()
+        if len(num_series) < 2:
             continue
 
-        series = numeric_series
-        mean, std = series.mean(), series.std()
+        mean, std = num_series.mean(), num_series.std()
 
-        if len(series) < 10:
-            median = series.median()
-
-            if median > 0:
-                outlier_mask = (series > median * 10) | (series < median / 10)
+        if len(num_series) < 10:
+            med = num_series.median()
+            if med > 0:
+                outlier_mask = (num_series > med * 10) | (num_series < med / 10)
             else:
-                deviations = (series - median).abs()
-                outlier_mask = deviations > 10 * max(deviations.median(), 1)
+                devs = (num_series - med).abs()
+                outlier_mask = devs > 10 * max(devs.median(), 1)
         else:
             if std == 0 or np.isnan(std):
                 continue
+            z = (num_series - mean) / std
+            outlier_mask = z.abs() > 3
 
-            z_scores = (series - mean) / std
-            outlier_mask = z_scores.abs() > 3
+        outlier_idx = num_series.index[outlier_mask].tolist()
+        n = len(outlier_idx)
+        total_outliers += n
 
-        outlier_indices = series.index[outlier_mask].tolist()
-        count = len(outlier_indices)
-
-        total_outliers += count
-
-        if count > 0:
-            numerical_outliers[col] = {
+        if n > 0:
+            num_outliers[col] = {
                 "mean": round(float(mean), 2),
                 "std": round(float(std), 2) if not np.isnan(std) else None,
-                "outlier_count": int(count),
-                "outlier_indices": outlier_indices[:20],
-                "note": "Only the first 20 outlier indices are shown."
+                "outlier_count": n,
+                "outlier_indices": outlier_idx[:20]  # cap at 20 for display
             }
 
-    # Categorical anomaly detection.
     for col in df.select_dtypes(include=["object"]).columns:
         series = df[col]
-
-        if is_identifier_column(col, series):
+        if is_id_col(col, series):
             continue
 
         non_null = series.dropna()
-
         if len(non_null) == 0:
             continue
 
-        unique_count = non_null.nunique()
-        uniqueness_ratio = unique_count / len(non_null)
-
-        # Skip high-cardinality columns to avoid noisy reports.
-        if unique_count > 50 or uniqueness_ratio > 0.30:
+        u_count = non_null.nunique()
+        if u_count > 50 or u_count / len(non_null) > 0.30:
             continue
 
-        value_counts = non_null.value_counts()
-        total = value_counts.sum()
-
-        rare = value_counts[value_counts / total < 0.01]
+        vc = non_null.value_counts()
+        total = vc.sum()
+        rare = vc[vc / total < 0.01]
 
         for val, count in rare.items():
-            categorical_anomalies.append({
+            cat_anomalies.append({
                 "column": col,
                 "value": str(val),
                 "count": int(count),
                 "message": f"'{col}': rare value '{val}' appears {int(count)} time(s)"
             })
 
-    anomaly_penalty = min(60, 2 * total_outliers + 5 * len(categorical_anomalies))
-    score = round(max(100 - anomaly_penalty, 0), 2)
+    penalty = min(60, 2 * total_outliers + 5 * len(cat_anomalies))
+    score = round(max(100 - penalty, 0), 2)
 
     return {
-        "numerical_outliers": numerical_outliers,
-        "categorical_anomalies": categorical_anomalies[:100],
+        "numerical_outliers": num_outliers,
+        "categorical_anomalies": cat_anomalies[:100],
         "anomaly_score": score
     }
 
@@ -350,84 +295,72 @@ def remediation_agent(results):
     suggestions = []
 
     for issue in schema.get("naming_issues", []):
-        col_name = issue.split("'")[1] if "'" in issue else "column"
+        col = issue.split("'")[1] if "'" in issue else "column"
         if "spaces" in issue:
-            suggestions.append(f"Rename '{col_name}' to remove whitespace.")
+            suggestions.append(f"Rename '{col}' — strip the whitespace.")
         if "special characters" in issue:
-            suggestions.append(f"Rename '{col_name}' using only letters, numbers, and underscores.")
+            suggestions.append(f"Rename '{col}' using only letters, numbers, and underscores.")
         if "starts with a digit" in issue:
-            suggestions.append(f"Rename '{col_name}' so it does not start with a digit.")
+            suggestions.append(f"Rename '{col}' so it doesn't start with a digit.")
 
     for issue in schema.get("data_type_issues", []):
-        col_name = issue.split("'")[1] if "'" in issue else "column"
+        col = issue.split("'")[1] if "'" in issue else "column"
         if "mostly numeric" in issue:
-            suggestions.append(f"Convert '{col_name}' to numeric and inspect non-numeric values.")
+            suggestions.append(f"Convert '{col}' to numeric and check those non-numeric entries.")
         if "mostly strings" in issue:
-            suggestions.append(f"Standardize '{col_name}' so values use one consistent type.")
+            suggestions.append(f"Standardize '{col}' — values should use one consistent type.")
 
     for col, stats in completeness.get("per_column_completeness", {}).items():
         if stats["completeness_pct"] < 100:
             missing_pct = 100 - stats["completeness_pct"]
-            suggestions.append(f"'{col}' has {missing_pct:.2f}% missing values. Consider median/mode imputation or row filtering.")
+            suggestions.append(f"'{col}' is {missing_pct:.2f}% missing. Impute or filter depending on your use case.")
 
     for col in completeness.get("sparse_columns", []):
-        suggestions.append(f"'{col}' is more than 50% empty. Consider dropping it or investigating the source.")
+        suggestions.append(f"'{col}' is over 50% empty — probably worth dropping or investigating why.")
 
     if consistency.get("duplicate_rows", 0) > 0:
-        suggestions.append(f"Remove {consistency['duplicate_rows']} duplicate rows.")
+        suggestions.append(f"Drop {consistency['duplicate_rows']} duplicate rows.")
 
     for issue in consistency.get("format_issues", []):
-        col_name = issue.split("'")[1] if "'" in issue else "column"
-        suggestions.append(f"Standardize casing and formatting in '{col_name}'.")
+        col = issue.split("'")[1] if "'" in issue else "column"
+        suggestions.append(f"Standardize casing in '{col}'.")
 
     for issue in consistency.get("cross_column_issues", []):
-        suggestions.append(f"{issue}. Check whether this relationship is valid.")
+        suggestions.append(f"{issue}. Double-check if this relationship is intentional.")
 
     for col, info in anomaly.get("numerical_outliers", {}).items():
-        suggestions.append(f"'{col}' has {info['outlier_count']} numerical outlier(s). Investigate and consider capping or correction.")
+        suggestions.append(f"'{col}' has {info['outlier_count']} outlier(s). Worth investigating — clip or correct as needed.")
 
     for issue in anomaly.get("categorical_anomalies", []):
         msg = issue["message"] if isinstance(issue, dict) and "message" in issue else str(issue)
-        suggestions.append(f"{msg}. Check whether this is valid or a data-entry error.")
+        suggestions.append(f"{msg}. Likely a data-entry error, but verify.")
 
+    # deduplicate while preserving order
     suggestions = list(dict.fromkeys(suggestions))
 
-    schema_score = schema.get("schema_score", 50)
-    completeness_score = completeness.get("completeness_score", 50)
-    consistency_score = consistency.get("consistency_score", 50)
-    anomaly_score = anomaly.get("anomaly_score", 50)
+    s_score = schema.get("schema_score", 50)
+    c_score = completeness.get("completeness_score", 50)
+    con_score = consistency.get("consistency_score", 50)
+    a_score = anomaly.get("anomaly_score", 50)
 
-    reliability_score = round(
-        0.2 * schema_score +
-        0.3 * completeness_score +
-        0.3 * consistency_score +
-        0.2 * anomaly_score,
-        2
-    )
+    reliability = round(0.2 * s_score + 0.3 * c_score + 0.3 * con_score + 0.2 * a_score, 2)
 
     summary_parts = []
-
     if schema.get("naming_issues") or schema.get("data_type_issues"):
-        summary_parts.append("Schema issues were detected, mainly related to column names or data types.")
-
+        summary_parts.append("Schema issues detected — column names or data types need attention.")
     if completeness.get("total_missing_values", 0) > 0:
-        summary_parts.append("The dataset contains missing values across one or more columns.")
-
+        summary_parts.append("Missing values found across one or more columns.")
     if consistency.get("duplicate_rows", 0) > 0 or consistency.get("format_issues") or consistency.get("cross_column_issues"):
-        summary_parts.append("Consistency problems were identified, including duplicates, formatting issues, or cross-column inconsistencies.")
-
+        summary_parts.append("Consistency problems found: duplicates, formatting, or cross-column conflicts.")
     if anomaly.get("numerical_outliers") or anomaly.get("categorical_anomalies"):
-        summary_parts.append("Anomalies were detected, such as numerical outliers or rare categorical values.")
-
+        summary_parts.append("Anomalies detected — numerical outliers or rare categorical values.")
     if not summary_parts:
-        summary_parts.append("The dataset appears clean with no major data quality issues.")
-
-    summary = " ".join(summary_parts)
+        summary_parts.append("Dataset looks clean — no major quality issues found.")
 
     return {
         "suggestions": suggestions,
-        "reliability_score": reliability_score,
-        "summary": summary
+        "reliability_score": reliability,
+        "summary": " ".join(summary_parts)
     }
 
 
@@ -440,15 +373,13 @@ def fix_dataset(df, results):
     df_clean = df_clean.drop(columns=[c for c in sparse_cols if c in df_clean.columns], errors="ignore")
 
     inferred = results.get("schema", {}).get("inferred_types", {})
-
     for col, typ in inferred.items():
         if typ == "numeric" and col in df_clean.columns:
             df_clean[col] = pd.to_numeric(df_clean[col], errors="coerce")
 
     for col in df_clean.columns:
         if pd.api.types.is_numeric_dtype(df_clean[col]):
-            median = df_clean[col].median()
-            df_clean[col] = df_clean[col].fillna(median)
+            df_clean[col] = df_clean[col].fillna(df_clean[col].median())
         else:
             mode = df_clean[col].mode(dropna=True)
             df_clean[col] = df_clean[col].fillna(mode[0] if not mode.empty else "")
@@ -466,7 +397,6 @@ def fix_dataset(df, results):
 
 def run_pipeline(csv_path):
     results = {}
-
     results["schema"] = schema_agent(csv_path)
     results["completeness"] = completeness_agent(csv_path)
     results["consistency"] = consistency_agent(csv_path)
@@ -476,15 +406,11 @@ def run_pipeline(csv_path):
     results["remediation"] = remediation
     results["reliability_score"] = remediation["reliability_score"]
 
-    df_original = load_dataset(csv_path)["df"]
-    results["cleaned_df"] = fix_dataset(df_original, results)
+    df_orig = load_dataset(csv_path)["df"]
+    results["cleaned_df"] = fix_dataset(df_orig, results)
 
     return results
 
-
-# =========================
-# Interface helpers
-# =========================
 
 def score_band(score):
     if score >= 80:
@@ -518,9 +444,7 @@ def make_json_safe(obj):
     return obj
 
 
-# =========================
-# Streamlit UI
-# =========================
+# --- UI ---
 
 st.title("AI Agents for Data Quality")
 st.caption("Upload a CSV file. The system runs Schema, Completeness, Consistency, Anomaly, and Remediation agents.")
@@ -558,7 +482,6 @@ if st.button("Run data quality analysis", type="primary"):
 
     st.subheader("Final reliability score")
     c1, c2, c3, c4, c5 = st.columns(5)
-
     c1.metric("Final", reliability)
     c2.metric("Schema", results["schema"]["schema_score"])
     c3.metric("Completeness", results["completeness"]["completeness_score"])
@@ -598,12 +521,11 @@ if st.button("Run data quality analysis", type="primary"):
         st.write("Checks missing values, placeholder values, and sparse columns.")
         st.metric("Total missing values", results["completeness"]["total_missing_values"])
 
-        completeness_df = pd.DataFrame.from_dict(
+        comp_df = pd.DataFrame.from_dict(
             results["completeness"]["per_column_completeness"],
             orient="index"
         ).reset_index().rename(columns={"index": "Column"})
-
-        st.dataframe(completeness_df, use_container_width=True)
+        st.dataframe(comp_df, use_container_width=True)
 
         st.write("Sparse columns:")
         st.json(results["completeness"]["sparse_columns"])
@@ -634,13 +556,12 @@ if st.button("Run data quality analysis", type="primary"):
         suggestions = results["remediation"]["suggestions"]
 
         if suggestions:
-            for i, suggestion in enumerate(suggestions[:100], start=1):
-                st.write(f"{i}. {suggestion}")
-
+            for i, s in enumerate(suggestions[:100], start=1):
+                st.write(f"{i}. {s}")
             if len(suggestions) > 100:
-                st.info(f"Showing first 100 suggestions out of {len(suggestions)}.")
+                st.info(f"Showing first 100 of {len(suggestions)} suggestions.")
         else:
-            st.write("No remediation suggestions were generated.")
+            st.write("No remediation suggestions generated.")
 
     st.subheader("Cleaned dataset preview")
     cleaned_df = results["cleaned_df"]
@@ -654,7 +575,6 @@ if st.button("Run data quality analysis", type="primary"):
     ).encode("utf-8")
 
     col_a, col_b = st.columns(2)
-
     with col_a:
         st.download_button(
             "Download cleaned CSV",
@@ -662,7 +582,6 @@ if st.button("Run data quality analysis", type="primary"):
             file_name="cleaned_dataset.csv",
             mime="text/csv"
         )
-
     with col_b:
         st.download_button(
             "Download JSON report",
