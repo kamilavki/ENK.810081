@@ -1,7 +1,7 @@
 # Agents for Data Quality
 
 **Team members:** Nurkhanym Ziyabek (810081), Emanuele Aicardi (814361), Kamila Dochshanova (809891)  
-**Captain:** Nurkhanym Ziyabek - Matricola: 810081
+**Captain:** Nurkhanym Ziyabek - 810081
 
 
 ## Introduction
@@ -27,9 +27,7 @@ The system is composed of five specialized agents, each responsible for a specif
 
 $$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {consistency score} + 0.2 {anomaly score}$$
 
-If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality.
-
-A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
+If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality. A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
 
 An optional LLM integration (local Ollama with `llama3` or Groq API with `mixtral-8x7b-32768`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
 
@@ -47,7 +45,7 @@ pip install pandas numpy matplotlib seaborn requests
 
 No GPU or special hardware is required. Tested with Python 3.14.2 on macOS. The optional LLM integration requires either [Ollama](https://ollama.com) running locally with a `llama3` model, or a `GROQ_API_KEY` environment variable set with access to `mixtral-8x7b-32768`.
 
-**Important:** The real NoiPA datasets (spesa.csv and attivazioniCessazioni.csv) must be placed inside the "datasets/" folder before running the notebook. These files are already included in the GitHub repository, with cloned repository, no action is needed.
+The real NoiPA datasets (spesa.csv and attivazioniCessazioni.csv) must be placed inside the "datasets/" folder before running the notebook. These files are already included in the GitHub repository, with cloned repository, no action is needed.
 
 
 ## Experimental Design
@@ -61,28 +59,36 @@ We ran the pipeline on several datasets to validate the system across different 
 
 **Experiment 2: Synthetic messy dataset (Dataset 2)**
 - Purpose: verify that the pipeline correctly identifies severe quality problems (type mismatches, many missing values, extreme outliers) and produces a significantly lower reliability score than Dataset 1
-- Baseline: Dataset 1 results
-- Metrics: same as Experiment 1
+- Baseline: manual inspection of the dataset
+- Metrics: reliability score, per-agent scores, number of issues detected, number of suggestions generated
 
-**Experiment 3: Real NoiPA dataset - Spesa (Dataset 3)**
+**Experiment 3: Synthetic large dataset (Dataset 3)**
+- Purpose: validate the scalability and robustness of our multi-agent system using a larger, controlled synthethic dataset
+- Baseline: manual inspection of the dataset
+- Metrics: reliability score, per-agent scores, number of issues detected, number of suggestions generated
+
+**Experiment 4: Real NoiPA dataset - Spesa (Dataset 4)**
 - Purpose: test the pipeline on actual NoiPA payroll and tax spending data to verify it scales to real-world inputs and catches genuine data quality issues
 - Baseline: synthetic dataset results
-- Metrics: same as above, plus number of real duplicate rows and outliers detected
+- Metrics: reliability score, per-agent scores, number of issues detected, number of suggestions generated, plus number of real duplicate rows and outliers detected
 
-**Experiment 4: Real NoiPA dataset - Attivazioni e Cessazioni (Dataset 4)**
+**Experiment 5: Real NoiPA dataset - Attivazioni e Cessazioni (Dataset 5)**
 - Purpose: verify the pipeline generalises across datasets with a structurally different set of columns (employee activations and terminations per ministry and region)
-- Baseline: Dataset 3 results
-- Metrics: same as above
+- Baseline: Dataset 4 results
+- Metrics: reliability score, per-agent scores, number of issues detected, number of suggestions generated, plus number of real duplicate rows and outliers detected
 
 
 ## Results
 
 | Dataset | Schema | Completeness | Consistency | Anomaly | Reliability |
 |---------|--------|--------------|-------------|---------|-------------|
-| Dataset 1 (synthetic, clean) | 95 | 93.33 | 95 | 100 | 95.50 |
-| Dataset 2 (synthetic, messy) | 90 | 58.33 | 95 | 100 | 84.00 |
-| Dataset 3 (real, Spesa) | 45 | 87.36 | 0 | 0 | 35.20 |
-| Dataset 4 (real, Attivazioni) | 25 | 87.56 | 0 | 0 | 31.30 |
+| Dataset 1 (synthetic, clean) | 95 | 93.33 | 99.5 | 100 | 96.85 |
+| Dataset 2 (synthetic, messy) | 90 | 58.33 | 100 | 100 | 85.50|
+| Dataset 3 (synthetic, large) | 90 | 99.39 | 97.5 | 100 | 97.07|
+| Dataset 4 (real, Spesa) | 45 | 87.36 | 75 | 40 | 65.71 |
+| Dataset 5 (real, Attivazioni) | 25 | 87.56 | 65| 40 | 58.77 |
+
+
 
 The results confirm that the system correctly assigns higher reliability scores to cleaner datasets and lower scores to messier ones. On the real NoiPA datasets, the agents detected thousands of genuine issues: 17,162 missing values and 216 numerical outliers in the Spesa dataset, and 47,503 missing values and 201 outliers in the Attivazioni dataset.
 
