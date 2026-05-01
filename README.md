@@ -25,14 +25,11 @@ The system is composed of five specialized agents, each responsible for a specif
 
 **5. Remediation Agent** - aggregates findings from all agents, generates concrete actionable suggestions for each issue and computes a final weighted **reliability score**:
 
-
-$$\text{Reliability} = 0.2 \times \text{Schema} + 0.3 \times \text{Completeness} + 0.3 \times \text{Consistency} + 0.2 \times \text{Anomaly}$$
-
-$$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {consistency score} + 0.2 {anomaly score}.$$
+$$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {consistency score} + 0.2 {anomaly score}$$
 
 If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality.
 
-A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case, and capping outliers at +/-3 standard deviations.
+A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
 
 An optional LLM integration (local Ollama with `llama3` or Groq API with `mixtral-8x7b-32768`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
 
