@@ -1,37 +1,37 @@
 # Agents for Data Quality
 
 **Team members:** Nurkhanym Ziyabek (810081), Emanuele Aicardi (814361), Kamila Dochshanova (809891)  
-**Captain:** Nurkhanym Ziyabek - Student ID: 810081
+**Captain:** Nurkhanym Ziyabek - Matricola: 810081
 
 
 ## Introduction
 
-NoiPA is the digital platform of the Italian Ministry of Economy and Finance that manages salaries, timesheets, and tax/social security obligations for employees of the Italian Public Administration. It periodically receives datasets from heterogeneous sources containing demographic, economic, and tax data. Currently, validation of these datasets is manual or nonexistent, making the process error-prone and time-consuming.
+NoiPA is the digital platform of the Italian Ministry of Economy and Finance that manages salaries, timesheets, and tax and social security obligations for employees of the Italian public sector. It periodically receives datasets from heterogeneous sources containing demographic, economic, and tax data. Currently, validation of these datasets is manual or nonexistent, making the process error-prone and time consuming.
 
-This project builds a multi-agent system that receives a raw CSV dataset, automatically detects quality issues, fixes them, and produces a structured quality report including anomalies, correction suggestions, and a final reliability score. The system was tested on three synthetic datasets and two real NoiPA datasets (spesa.csv and attivazioniCessazioni.csv).
+This project builds a multi-agent system that receives a raw CSV dataset, automatically detects quality issues, fixes them and produces a structured quality report including anomalies, correction suggestions, and a final reliability score. The system was tested on three synthetic datasets and two real NoiPA datasets (spesa.csv and attivazioniCessazioni.csv).
 
 
 ## Methods
 
 The system is composed of five specialized agents, each responsible for a specific type of data quality check, orchestrated by a central "run_pipeline" function.
 
-**1. Schema Agent** - validates column naming conventions (special characters, leading digits, whitespace) and detects mixed data types within columns. The schema score starts at 100 and subtracts 5 points per issue found.
+**1. Schema Agent** - validates column naming conventions (special characters, leading digits, whitespace) and detects mixed data types within columns. 
 
-**2. Completeness Agent** - counts missing values and placeholder strings (e.g. "N/A", "-", "unknown") per column, computes a completeness percentage per column and overall, and flags sparse columns where more than 50% of values are missing. The completeness score equals the overall completeness percentage directly.
+**2. Completeness Agent** - identifies missing or placeholder values to calculate completeness scores and flag nearly empty columns for removal.
 
-**3. Consistency Agent** - detects exact duplicate rows, flags inconsistent string casing within columns, and checks cross-column logical rules (e.g. the Rata column must follow the YYYYMM format). The consistency score starts at 100 and subtracts 5 points per issue.
+**3. Consistency Agent** - ensures logical consistency between fields, uniform formatting within columns and the identification of exact or near-duplicate records. 
 
-**4. Anomaly Agent** - applies the Z-score method to detect numerical outliers (values more than 3 standard deviations from the mean) and flags rare categorical values appearing less than 1% of the time. The anomaly score starts at 100 and subtracts 2 points per numerical outlier and 5 points per categorical anomaly.
+**4. Anomaly Agent** - performs outlier detection on numerical columns and highlights rare or unexpected categories to ensure data consistency.
 
-**5. Remediation Agent** - aggregates findings from all agents, generates concrete actionable suggestions for each issue, and computes a final weighted **reliability score**:
+**5. Remediation Agent** - aggregates findings from all agents, generates concrete actionable suggestions for each issue and computes a final weighted **reliability score**:
 
-$$\text{Reliability} = 0.2 \times \text{Schema} + 0.3 \times \text{Completeness} + 0.3 \times \text{Consistency} + 0.2 \times \text{Anomaly}$$
+$$	{reliability score} = 0.2 	{schema score} + 0.3 {completeness score} + 0.3 {consistency score} + 0.2 {anomaly score}$$
 
 If any score is missing, a default value of 50 is used. The agent also writes a plain language summary of the dataset quality.
 
-A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case, and capping outliers at ±3 standard deviations.
+A "fix_dataset" function automatically applies corrections: removing duplicates, dropping sparse columns, converting numeric-like strings, imputing missing values (median for numeric columns, mode for categorical), standardizing string casing to title case.
 
-An optional LLM integration (local Ollama with `llama3`, or Groq API with `mixtral-8x7b-32768`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
+An optional LLM integration (local Ollama with `llama3` or Groq API with `mixtral-8x7b-32768`) can enhance the natural language output of the Remediation Agent. If neither is available, the system automatically falls back to rule-based text generation - the pipeline always runs completely without any LLM.
 
 The pipeline follows a **Supervisor Architecture**: the `run_pipeline` manager function calls each agent in sequence and passes all results to the Remediation Agent.
 
